@@ -1,0 +1,100 @@
+\hypertarget{Service_8cpp}{}\section{src/\+Service.cpp File Reference}
+\label{Service_8cpp}\index{src/\+Service.\+cpp@{src/\+Service.\+cpp}}
+{\ttfamily \#include \char`\"{}Service.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{Service_8cpp_a4e05fae612d5472051492ccf4ddaa07b}{compare\+By\+Date} (\hyperlink{classService}{Service} $\ast$s1, \hyperlink{classService}{Service} $\ast$s2)
+\item 
+void \hyperlink{Service_8cpp_a5a9fa1965329dec66c25636ac2fa5aac}{show\+All\+Services\+Info} (vector$<$ \hyperlink{classService}{Service} $\ast$$>$ services)
+\item 
+void \hyperlink{Service_8cpp_aafbae68c4ed443d4f29cebcbff866c51}{print\+Services\+Table} ()
+\item 
+void \hyperlink{Service_8cpp_a2f3657e92cb799e32cf79f6ea5833165}{show\+Services\+Day} (vector$<$ \hyperlink{classService}{Service} $\ast$$>$ services)
+\item 
+void \hyperlink{Service_8cpp_a7da18dfbd89ce0aff5438e714bf27ff4}{show\+Services\+Between\+Days} (vector$<$ \hyperlink{classService}{Service} $\ast$$>$ services)
+\item 
+void \hyperlink{Service_8cpp_ae43bfcc8b1e4110f8c9454552f847b32}{show\+Customer\+Services\+By\+Nif} (vector$<$ \hyperlink{classService}{Service} $\ast$$>$ services, vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$ customers)
+\item 
+void \hyperlink{Service_8cpp_a232cdf9062caeb45216f32de8a1cf6f7}{show\+Customer\+Services\+By\+Name} (vector$<$ \hyperlink{classService}{Service} $\ast$$>$ services, vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$ customers)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{Service_8cpp_a4e05fae612d5472051492ccf4ddaa07b}{}\label{Service_8cpp_a4e05fae612d5472051492ccf4ddaa07b} 
+\index{Service.\+cpp@{Service.\+cpp}!compare\+By\+Date@{compare\+By\+Date}}
+\index{compare\+By\+Date@{compare\+By\+Date}!Service.\+cpp@{Service.\+cpp}}
+\subsubsection{\texorpdfstring{compare\+By\+Date()}{compareByDate()}}
+{\footnotesize\ttfamily bool compare\+By\+Date (\begin{DoxyParamCaption}\item[{\hyperlink{classService}{Service} $\ast$}]{s1,  }\item[{\hyperlink{classService}{Service} $\ast$}]{s2 }\end{DoxyParamCaption})}
+
+Sort transactions by increasing date 
+\begin{DoxyParams}{Parameters}
+{\em s1} & service one \\
+\hline
+{\em s2} & service two \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if service one is more or equal than service two 
+\end{DoxyReturn}
+\hypertarget{Service_8cpp_aafbae68c4ed443d4f29cebcbff866c51}{}\label{Service_8cpp_aafbae68c4ed443d4f29cebcbff866c51} 
+\index{Service.\+cpp@{Service.\+cpp}!print\+Services\+Table@{print\+Services\+Table}}
+\index{print\+Services\+Table@{print\+Services\+Table}!Service.\+cpp@{Service.\+cpp}}
+\subsubsection{\texorpdfstring{print\+Services\+Table()}{printServicesTable()}}
+{\footnotesize\ttfamily void print\+Services\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print the services table. \hypertarget{Service_8cpp_a5a9fa1965329dec66c25636ac2fa5aac}{}\label{Service_8cpp_a5a9fa1965329dec66c25636ac2fa5aac} 
+\index{Service.\+cpp@{Service.\+cpp}!show\+All\+Services\+Info@{show\+All\+Services\+Info}}
+\index{show\+All\+Services\+Info@{show\+All\+Services\+Info}!Service.\+cpp@{Service.\+cpp}}
+\subsubsection{\texorpdfstring{show\+All\+Services\+Info()}{showAllServicesInfo()}}
+{\footnotesize\ttfamily void show\+All\+Services\+Info (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classService}{Service} $\ast$$>$}]{services }\end{DoxyParamCaption})}
+
+Show all the services information in line with the services table. 
+\begin{DoxyParams}{Parameters}
+{\em services} & available services \\
+\hline
+\end{DoxyParams}
+\hypertarget{Service_8cpp_a232cdf9062caeb45216f32de8a1cf6f7}{}\label{Service_8cpp_a232cdf9062caeb45216f32de8a1cf6f7} 
+\index{Service.\+cpp@{Service.\+cpp}!show\+Customer\+Services\+By\+Name@{show\+Customer\+Services\+By\+Name}}
+\index{show\+Customer\+Services\+By\+Name@{show\+Customer\+Services\+By\+Name}!Service.\+cpp@{Service.\+cpp}}
+\subsubsection{\texorpdfstring{show\+Customer\+Services\+By\+Name()}{showCustomerServicesByName()}}
+{\footnotesize\ttfamily void show\+Customer\+Services\+By\+Name (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classService}{Service} $\ast$$>$}]{services,  }\item[{vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$}]{customers }\end{DoxyParamCaption})}
+
+Show a customer service, searching by name. 
+\begin{DoxyParams}{Parameters}
+{\em services} & services available \\
+\hline
+{\em customer} & Central taxis customers \\
+\hline
+\end{DoxyParams}
+\hypertarget{Service_8cpp_ae43bfcc8b1e4110f8c9454552f847b32}{}\label{Service_8cpp_ae43bfcc8b1e4110f8c9454552f847b32} 
+\index{Service.\+cpp@{Service.\+cpp}!show\+Customer\+Services\+By\+Nif@{show\+Customer\+Services\+By\+Nif}}
+\index{show\+Customer\+Services\+By\+Nif@{show\+Customer\+Services\+By\+Nif}!Service.\+cpp@{Service.\+cpp}}
+\subsubsection{\texorpdfstring{show\+Customer\+Services\+By\+Nif()}{showCustomerServicesByNif()}}
+{\footnotesize\ttfamily void show\+Customer\+Services\+By\+Nif (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classService}{Service} $\ast$$>$}]{services,  }\item[{vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$}]{customers }\end{DoxyParamCaption})}
+
+Show a customer service, searching by N\+IF. 
+\begin{DoxyParams}{Parameters}
+{\em services} & services available \\
+\hline
+{\em customer} & Central taxis customers \\
+\hline
+\end{DoxyParams}
+\hypertarget{Service_8cpp_a7da18dfbd89ce0aff5438e714bf27ff4}{}\label{Service_8cpp_a7da18dfbd89ce0aff5438e714bf27ff4} 
+\index{Service.\+cpp@{Service.\+cpp}!show\+Services\+Between\+Days@{show\+Services\+Between\+Days}}
+\index{show\+Services\+Between\+Days@{show\+Services\+Between\+Days}!Service.\+cpp@{Service.\+cpp}}
+\subsubsection{\texorpdfstring{show\+Services\+Between\+Days()}{showServicesBetweenDays()}}
+{\footnotesize\ttfamily void show\+Services\+Between\+Days (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classService}{Service} $\ast$$>$}]{services }\end{DoxyParamCaption})}
+
+Show the services between two days in line. 
+\begin{DoxyParams}{Parameters}
+{\em services} & available services \\
+\hline
+\end{DoxyParams}
+\hypertarget{Service_8cpp_a2f3657e92cb799e32cf79f6ea5833165}{}\label{Service_8cpp_a2f3657e92cb799e32cf79f6ea5833165} 
+\index{Service.\+cpp@{Service.\+cpp}!show\+Services\+Day@{show\+Services\+Day}}
+\index{show\+Services\+Day@{show\+Services\+Day}!Service.\+cpp@{Service.\+cpp}}
+\subsubsection{\texorpdfstring{show\+Services\+Day()}{showServicesDay()}}
+{\footnotesize\ttfamily void show\+Services\+Day (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classService}{Service} $\ast$$>$}]{services }\end{DoxyParamCaption})}
+
+Show the services of a day in line.  available services 

@@ -1,0 +1,179 @@
+\hypertarget{Customer_8cpp}{}\section{src/\+Customer.cpp File Reference}
+\label{Customer_8cpp}\index{src/\+Customer.\+cpp@{src/\+Customer.\+cpp}}
+{\ttfamily \#include \char`\"{}Customer.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{Customer_8cpp_a6b303e551a85a66f41a88c2b0ea5619f}{read\+Customer\+Nif} ()
+\item 
+unsigned int \hyperlink{Customer_8cpp_a91935ab31bb88133a519dece13225c2d}{read\+Customer\+Phone\+Number} ()
+\item 
+bool \hyperlink{Customer_8cpp_a7eb95f72d44978124a93a2581cadf3d4}{compare\+By\+Name} (\hyperlink{classCustomer}{Customer} $\ast$name\+\_\+a, \hyperlink{classCustomer}{Customer} $\ast$name\+\_\+b)
+\item 
+bool \hyperlink{Customer_8cpp_aff13f62e3bc97fd5254daa68a4e5edaa}{compare\+By\+Nif} (\hyperlink{classCustomer}{Customer} $\ast$nif\+\_\+a, \hyperlink{classCustomer}{Customer} $\ast$nif\+\_\+b)
+\item 
+void \hyperlink{Customer_8cpp_a277b17dbda038647325432ce81544acb}{print\+Customer\+Table} ()
+\item 
+void \hyperlink{Customer_8cpp_a674a07a3017e41f980baf4be733a4cb5}{print\+Customer\+Table\+Type} (char type)
+\item 
+void \hyperlink{Customer_8cpp_aca416738432da9ffb09b06355ff98387}{show\+All\+Customers\+Info} (vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$ customers)
+\item 
+void \hyperlink{Customer_8cpp_af873e620b4282f14fc35deb349be6774}{show\+All\+Customers\+Info\+By\+Type} (vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$ customers, char type)
+\item 
+\hyperlink{classCustomer}{Customer} $\ast$ \hyperlink{Customer_8cpp_ade28623b01af60703a7add5a1b62b831}{customer\+Exists} (unsigned int nif, vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$ customers)
+\item 
+bool \hyperlink{Customer_8cpp_aa152b797656f02ec2036447ecc89702e}{verify\+Nif\+Already\+Exist} (unsigned int nif, vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$ customers)
+\item 
+void \hyperlink{Customer_8cpp_aa11b91db561974e3cd595c78b5352f35}{show\+Customers\+Info\+By\+Nif} (vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$ customers)
+\item 
+void \hyperlink{Customer_8cpp_a735779d71d7d7d3936cd4334b8380004}{show\+Customers\+Info\+By\+Name} (vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$ customers)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{Customer_8cpp_a7eb95f72d44978124a93a2581cadf3d4}{}\label{Customer_8cpp_a7eb95f72d44978124a93a2581cadf3d4} 
+\index{Customer.\+cpp@{Customer.\+cpp}!compare\+By\+Name@{compare\+By\+Name}}
+\index{compare\+By\+Name@{compare\+By\+Name}!Customer.\+cpp@{Customer.\+cpp}}
+\subsubsection{\texorpdfstring{compare\+By\+Name()}{compareByName()}}
+{\footnotesize\ttfamily bool compare\+By\+Name (\begin{DoxyParamCaption}\item[{\hyperlink{classCustomer}{Customer} $\ast$}]{name\+\_\+a,  }\item[{\hyperlink{classCustomer}{Customer} $\ast$}]{name\+\_\+b }\end{DoxyParamCaption})}
+
+Function used while sorting customers by name. 
+\begin{DoxyParams}{Parameters}
+{\em name\+\_\+a} & first customer to compare \\
+\hline
+{\em name\+\_\+b} & second customer to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the name\+\_\+a is less than name\+\_\+b 
+\end{DoxyReturn}
+\hypertarget{Customer_8cpp_aff13f62e3bc97fd5254daa68a4e5edaa}{}\label{Customer_8cpp_aff13f62e3bc97fd5254daa68a4e5edaa} 
+\index{Customer.\+cpp@{Customer.\+cpp}!compare\+By\+Nif@{compare\+By\+Nif}}
+\index{compare\+By\+Nif@{compare\+By\+Nif}!Customer.\+cpp@{Customer.\+cpp}}
+\subsubsection{\texorpdfstring{compare\+By\+Nif()}{compareByNif()}}
+{\footnotesize\ttfamily bool compare\+By\+Nif (\begin{DoxyParamCaption}\item[{\hyperlink{classCustomer}{Customer} $\ast$}]{nif\+\_\+a,  }\item[{\hyperlink{classCustomer}{Customer} $\ast$}]{nif\+\_\+b }\end{DoxyParamCaption})}
+
+Function used while sorting customers by nif. 
+\begin{DoxyParams}{Parameters}
+{\em nif\+\_\+a} & first customer to compare \\
+\hline
+{\em nif\+\_\+b} & second customer to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the nif\+\_\+a is less than nif\+\_\+b 
+\end{DoxyReturn}
+\hypertarget{Customer_8cpp_ade28623b01af60703a7add5a1b62b831}{}\label{Customer_8cpp_ade28623b01af60703a7add5a1b62b831} 
+\index{Customer.\+cpp@{Customer.\+cpp}!customer\+Exists@{customer\+Exists}}
+\index{customer\+Exists@{customer\+Exists}!Customer.\+cpp@{Customer.\+cpp}}
+\subsubsection{\texorpdfstring{customer\+Exists()}{customerExists()}}
+{\footnotesize\ttfamily \hyperlink{classCustomer}{Customer} $\ast$ customer\+Exists (\begin{DoxyParamCaption}\item[{unsigned int}]{nif,  }\item[{vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$}]{customers }\end{DoxyParamCaption})}
+
+Verify if the customer exists, if not return a null customer. 
+\begin{DoxyParams}{Parameters}
+{\em nif} & customer nif to look for \\
+\hline
+{\em customers} & customers vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the customer with the nif receive 
+\end{DoxyReturn}
+\hypertarget{Customer_8cpp_a277b17dbda038647325432ce81544acb}{}\label{Customer_8cpp_a277b17dbda038647325432ce81544acb} 
+\index{Customer.\+cpp@{Customer.\+cpp}!print\+Customer\+Table@{print\+Customer\+Table}}
+\index{print\+Customer\+Table@{print\+Customer\+Table}!Customer.\+cpp@{Customer.\+cpp}}
+\subsubsection{\texorpdfstring{print\+Customer\+Table()}{printCustomerTable()}}
+{\footnotesize\ttfamily void print\+Customer\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print the customer table. \hypertarget{Customer_8cpp_a674a07a3017e41f980baf4be733a4cb5}{}\label{Customer_8cpp_a674a07a3017e41f980baf4be733a4cb5} 
+\index{Customer.\+cpp@{Customer.\+cpp}!print\+Customer\+Table\+Type@{print\+Customer\+Table\+Type}}
+\index{print\+Customer\+Table\+Type@{print\+Customer\+Table\+Type}!Customer.\+cpp@{Customer.\+cpp}}
+\subsubsection{\texorpdfstring{print\+Customer\+Table\+Type()}{printCustomerTableType()}}
+{\footnotesize\ttfamily void print\+Customer\+Table\+Type (\begin{DoxyParamCaption}\item[{char}]{type }\end{DoxyParamCaption})}
+
+Print the customer table type. 
+\begin{DoxyParams}{Parameters}
+{\em type} & customer type \\
+\hline
+\end{DoxyParams}
+\hypertarget{Customer_8cpp_a6b303e551a85a66f41a88c2b0ea5619f}{}\label{Customer_8cpp_a6b303e551a85a66f41a88c2b0ea5619f} 
+\index{Customer.\+cpp@{Customer.\+cpp}!read\+Customer\+Nif@{read\+Customer\+Nif}}
+\index{read\+Customer\+Nif@{read\+Customer\+Nif}!Customer.\+cpp@{Customer.\+cpp}}
+\subsubsection{\texorpdfstring{read\+Customer\+Nif()}{readCustomerNif()}}
+{\footnotesize\ttfamily unsigned int read\+Customer\+Nif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read the customer N\+IF. \begin{DoxyReturn}{Returns}
+customer nif 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classInvalidNifException}{Invalid\+Nif\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{Customer_8cpp_a91935ab31bb88133a519dece13225c2d}{}\label{Customer_8cpp_a91935ab31bb88133a519dece13225c2d} 
+\index{Customer.\+cpp@{Customer.\+cpp}!read\+Customer\+Phone\+Number@{read\+Customer\+Phone\+Number}}
+\index{read\+Customer\+Phone\+Number@{read\+Customer\+Phone\+Number}!Customer.\+cpp@{Customer.\+cpp}}
+\subsubsection{\texorpdfstring{read\+Customer\+Phone\+Number()}{readCustomerPhoneNumber()}}
+{\footnotesize\ttfamily unsigned int read\+Customer\+Phone\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read the customer phone number. \begin{DoxyReturn}{Returns}
+customer phone number 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classInvalidPhoneNumberException}{Invalid\+Phone\+Number\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{Customer_8cpp_aca416738432da9ffb09b06355ff98387}{}\label{Customer_8cpp_aca416738432da9ffb09b06355ff98387} 
+\index{Customer.\+cpp@{Customer.\+cpp}!show\+All\+Customers\+Info@{show\+All\+Customers\+Info}}
+\index{show\+All\+Customers\+Info@{show\+All\+Customers\+Info}!Customer.\+cpp@{Customer.\+cpp}}
+\subsubsection{\texorpdfstring{show\+All\+Customers\+Info()}{showAllCustomersInfo()}}
+{\footnotesize\ttfamily void show\+All\+Customers\+Info (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$}]{customers }\end{DoxyParamCaption})}
+
+Show all the customer information in line with the customer table. 
+\begin{DoxyParams}{Parameters}
+{\em customers} & vector of customers \\
+\hline
+\end{DoxyParams}
+\hypertarget{Customer_8cpp_af873e620b4282f14fc35deb349be6774}{}\label{Customer_8cpp_af873e620b4282f14fc35deb349be6774} 
+\index{Customer.\+cpp@{Customer.\+cpp}!show\+All\+Customers\+Info\+By\+Type@{show\+All\+Customers\+Info\+By\+Type}}
+\index{show\+All\+Customers\+Info\+By\+Type@{show\+All\+Customers\+Info\+By\+Type}!Customer.\+cpp@{Customer.\+cpp}}
+\subsubsection{\texorpdfstring{show\+All\+Customers\+Info\+By\+Type()}{showAllCustomersInfoByType()}}
+{\footnotesize\ttfamily void show\+All\+Customers\+Info\+By\+Type (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$}]{customers,  }\item[{char}]{type }\end{DoxyParamCaption})}
+
+Show all the customer information by customer type in line with the customer table. 
+\begin{DoxyParams}{Parameters}
+{\em customers} & vector of customers \\
+\hline
+{\em type} & customer type \\
+\hline
+\end{DoxyParams}
+\hypertarget{Customer_8cpp_a735779d71d7d7d3936cd4334b8380004}{}\label{Customer_8cpp_a735779d71d7d7d3936cd4334b8380004} 
+\index{Customer.\+cpp@{Customer.\+cpp}!show\+Customers\+Info\+By\+Name@{show\+Customers\+Info\+By\+Name}}
+\index{show\+Customers\+Info\+By\+Name@{show\+Customers\+Info\+By\+Name}!Customer.\+cpp@{Customer.\+cpp}}
+\subsubsection{\texorpdfstring{show\+Customers\+Info\+By\+Name()}{showCustomersInfoByName()}}
+{\footnotesize\ttfamily void show\+Customers\+Info\+By\+Name (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$}]{customers }\end{DoxyParamCaption})}
+
+Shows the information of one customer, who is searched by the name. 
+\begin{DoxyParams}{Parameters}
+{\em customers} & customers vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{Customer_8cpp_aa11b91db561974e3cd595c78b5352f35}{}\label{Customer_8cpp_aa11b91db561974e3cd595c78b5352f35} 
+\index{Customer.\+cpp@{Customer.\+cpp}!show\+Customers\+Info\+By\+Nif@{show\+Customers\+Info\+By\+Nif}}
+\index{show\+Customers\+Info\+By\+Nif@{show\+Customers\+Info\+By\+Nif}!Customer.\+cpp@{Customer.\+cpp}}
+\subsubsection{\texorpdfstring{show\+Customers\+Info\+By\+Nif()}{showCustomersInfoByNif()}}
+{\footnotesize\ttfamily void show\+Customers\+Info\+By\+Nif (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$}]{customers }\end{DoxyParamCaption})}
+
+Shows the information of one customer, who is searched by the N\+IF. 
+\begin{DoxyParams}{Parameters}
+{\em customers} & customers vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{Customer_8cpp_aa152b797656f02ec2036447ecc89702e}{}\label{Customer_8cpp_aa152b797656f02ec2036447ecc89702e} 
+\index{Customer.\+cpp@{Customer.\+cpp}!verify\+Nif\+Already\+Exist@{verify\+Nif\+Already\+Exist}}
+\index{verify\+Nif\+Already\+Exist@{verify\+Nif\+Already\+Exist}!Customer.\+cpp@{Customer.\+cpp}}
+\subsubsection{\texorpdfstring{verify\+Nif\+Already\+Exist()}{verifyNifAlreadyExist()}}
+{\footnotesize\ttfamily bool verify\+Nif\+Already\+Exist (\begin{DoxyParamCaption}\item[{unsigned int}]{nif,  }\item[{vector$<$ \hyperlink{classCustomer}{Customer} $\ast$$>$}]{customers }\end{DoxyParamCaption})}
+
+Verify if the customer nif already exists 

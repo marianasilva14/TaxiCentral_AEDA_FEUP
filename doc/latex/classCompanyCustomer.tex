@@ -1,0 +1,211 @@
+\hypertarget{classCompanyCustomer}{}\section{Company\+Customer Class Reference}
+\label{classCompanyCustomer}\index{Company\+Customer@{Company\+Customer}}
+
+
+{\ttfamily \#include $<$Company\+Customer.\+h$>$}
+
+Inheritance diagram for Company\+Customer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCompanyCustomer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCompanyCustomer_a525a581a4b955657234bab5761ae2f02}{Company\+Customer} (unsigned int \hyperlink{classCustomer_a65ad3329532d5ad31e36f4ac81858e31}{nif}, string \hyperlink{classCustomer_a42c1c948fa0121c82b2725826d9f8300}{name}, string \hyperlink{classCustomer_a72d87951c1b76883390d00baf044cf2c}{address}, int \hyperlink{classCustomer_ad8c8d99b4c35f66a1a87b234c6078e0f}{phone\+Number}, double \hyperlink{classCompanyCustomer_a69dd60239a6ccfef6c444e64975fb5d7}{cost})
+\item 
+\hyperlink{classCompanyCustomer_af95c687f20e167f7df7e6fcee1493e7f}{Company\+Customer} (unsigned int \hyperlink{classCustomer_a65ad3329532d5ad31e36f4ac81858e31}{nif}, string \hyperlink{classCustomer_a42c1c948fa0121c82b2725826d9f8300}{name}, string \hyperlink{classCustomer_a72d87951c1b76883390d00baf044cf2c}{address}, int \hyperlink{classCustomer_ad8c8d99b4c35f66a1a87b234c6078e0f}{phone\+Number}, double \hyperlink{classCompanyCustomer_a69dd60239a6ccfef6c444e64975fb5d7}{cost}, \hyperlink{classVoucher}{Voucher} $\ast$\hyperlink{classCompanyCustomer_a19915d197c698ef79c608a6ca1f178fe}{voucher})
+\item 
+\hyperlink{classCompanyCustomer_afd96d1b12bbaf07317777b0736eb1d3f}{$\sim$\+Company\+Customer} ()
+\item 
+int \hyperlink{classCompanyCustomer_a4552ae519d7ba549979d7f67cfdec3fb}{get\+Cost} ()
+\item 
+float \hyperlink{classCompanyCustomer_aa9af04558e4c90df0c2379456ae7b626}{get\+Discount} ()
+\item 
+void \hyperlink{classCompanyCustomer_a20935ee3df903d3933c74e8bc2148402}{reset\+Cost} ()
+\item 
+void \hyperlink{classCompanyCustomer_a904197ef9475d4309ac41cc54a2ae5a3}{accumulate\+Service} (\hyperlink{classService}{Service} $\ast$service)
+\item 
+\hyperlink{classCustomer_adf157cb713398bb38163743659ec3049}{C\+U\+S\+T\+O\+M\+E\+R\+\_\+\+T\+Y\+PE} \hyperlink{classCompanyCustomer_a29b36593a5cc93f3c6d9f9372b261bba}{get\+Customer\+Type} ()
+\item 
+string \hyperlink{classCompanyCustomer_a43dcc60f21c2b48e4af587314653d94d}{get\+Information} ()
+\item 
+string \hyperlink{classCompanyCustomer_aae3bd828d590b136e6ca407ef6f47350}{to\+File\+Format} ()
+\item 
+\hyperlink{classVoucher}{Voucher} $\ast$ \hyperlink{classCompanyCustomer_a8cac3004028091378a2edb5cc211f1c8}{add\+Voucher} (\hyperlink{classVoucher}{Voucher} $\ast$\hyperlink{classCompanyCustomer_a19915d197c698ef79c608a6ca1f178fe}{voucher})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classCompanyCustomer_a69dd60239a6ccfef6c444e64975fb5d7}{cost}
+\item 
+\hyperlink{classVoucher}{Voucher} $\ast$ \hyperlink{classCompanyCustomer_a19915d197c698ef79c608a6ca1f178fe}{voucher}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCompanyCustomer_a525a581a4b955657234bab5761ae2f02}{}\label{classCompanyCustomer_a525a581a4b955657234bab5761ae2f02} 
+\index{Company\+Customer@{Company\+Customer}!Company\+Customer@{Company\+Customer}}
+\index{Company\+Customer@{Company\+Customer}!Company\+Customer@{Company\+Customer}}
+\subsubsection{\texorpdfstring{Company\+Customer()}{CompanyCustomer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Company\+Customer\+::\+Company\+Customer (\begin{DoxyParamCaption}\item[{unsigned int}]{nif,  }\item[{string}]{name,  }\item[{string}]{address,  }\item[{int}]{phone\+Number,  }\item[{double}]{cost }\end{DoxyParamCaption})}
+
+The constructor of the \hyperlink{classCompanyCustomer}{Company\+Customer} class, where the elements are initialized. As a new customer, at first the company don\textquotesingle{}t have vouchers. 
+\begin{DoxyParams}{Parameters}
+{\em nif} & customer nif \\
+\hline
+{\em name} & customer name \\
+\hline
+{\em address} & customer address \\
+\hline
+{\em phone\+Number} & customer phone number \\
+\hline
+{\em cost} & total value of cutomer services \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCompanyCustomer_af95c687f20e167f7df7e6fcee1493e7f}{}\label{classCompanyCustomer_af95c687f20e167f7df7e6fcee1493e7f} 
+\index{Company\+Customer@{Company\+Customer}!Company\+Customer@{Company\+Customer}}
+\index{Company\+Customer@{Company\+Customer}!Company\+Customer@{Company\+Customer}}
+\subsubsection{\texorpdfstring{Company\+Customer()}{CompanyCustomer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Company\+Customer\+::\+Company\+Customer (\begin{DoxyParamCaption}\item[{unsigned int}]{nif,  }\item[{string}]{name,  }\item[{string}]{address,  }\item[{int}]{phone\+Number,  }\item[{double}]{cost,  }\item[{\hyperlink{classVoucher}{Voucher} $\ast$}]{voucher }\end{DoxyParamCaption})}
+
+The constructor of the \hyperlink{classCompanyCustomer}{Company\+Customer} class, where the elements are initialized. 
+\begin{DoxyParams}{Parameters}
+{\em nif} & customer nif \\
+\hline
+{\em name} & customer name \\
+\hline
+{\em address} & customer address \\
+\hline
+{\em phone\+Number} & customer phone number \\
+\hline
+{\em cost} & total value of cutomer services \\
+\hline
+{\em voucher} & company customer voucher \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCompanyCustomer_afd96d1b12bbaf07317777b0736eb1d3f}{}\label{classCompanyCustomer_afd96d1b12bbaf07317777b0736eb1d3f} 
+\index{Company\+Customer@{Company\+Customer}!````~Company\+Customer@{$\sim$\+Company\+Customer}}
+\index{````~Company\+Customer@{$\sim$\+Company\+Customer}!Company\+Customer@{Company\+Customer}}
+\subsubsection{\texorpdfstring{$\sim$\+Company\+Customer()}{~CompanyCustomer()}}
+{\footnotesize\ttfamily Company\+Customer\+::$\sim$\+Company\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCompanyCustomer_a904197ef9475d4309ac41cc54a2ae5a3}{}\label{classCompanyCustomer_a904197ef9475d4309ac41cc54a2ae5a3} 
+\index{Company\+Customer@{Company\+Customer}!accumulate\+Service@{accumulate\+Service}}
+\index{accumulate\+Service@{accumulate\+Service}!Company\+Customer@{Company\+Customer}}
+\subsubsection{\texorpdfstring{accumulate\+Service()}{accumulateService()}}
+{\footnotesize\ttfamily void Company\+Customer\+::accumulate\+Service (\begin{DoxyParamCaption}\item[{\hyperlink{classService}{Service} $\ast$}]{service }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function adds to the cost the value of the service. 
+\begin{DoxyParams}{Parameters}
+{\em service} & available services \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classCustomer_ab42320f3e4d1c23e745ce901d30faf77}{Customer}.
+
+\hypertarget{classCompanyCustomer_a8cac3004028091378a2edb5cc211f1c8}{}\label{classCompanyCustomer_a8cac3004028091378a2edb5cc211f1c8} 
+\index{Company\+Customer@{Company\+Customer}!add\+Voucher@{add\+Voucher}}
+\index{add\+Voucher@{add\+Voucher}!Company\+Customer@{Company\+Customer}}
+\subsubsection{\texorpdfstring{add\+Voucher()}{addVoucher()}}
+{\footnotesize\ttfamily \hyperlink{classVoucher}{Voucher} $\ast$ Company\+Customer\+::add\+Voucher (\begin{DoxyParamCaption}\item[{\hyperlink{classVoucher}{Voucher} $\ast$}]{voucher }\end{DoxyParamCaption})}
+
+This function updates the deadline voucher. Please note that if we want to add, for example, 30 days to the voucher, they must be 30 calendar days. 
+\begin{DoxyParams}{Parameters}
+{\em voucher} & \hyperlink{classCompanyCustomer}{Company\+Customer} voucher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new voucher, this function can return the same voucher. 
+\end{DoxyReturn}
+\hypertarget{classCompanyCustomer_a4552ae519d7ba549979d7f67cfdec3fb}{}\label{classCompanyCustomer_a4552ae519d7ba549979d7f67cfdec3fb} 
+\index{Company\+Customer@{Company\+Customer}!get\+Cost@{get\+Cost}}
+\index{get\+Cost@{get\+Cost}!Company\+Customer@{Company\+Customer}}
+\subsubsection{\texorpdfstring{get\+Cost()}{getCost()}}
+{\footnotesize\ttfamily int Company\+Customer\+::get\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cost is a private double of the \hyperlink{classCompanyCustomer}{Company\+Customer} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+total value of cutomer services 
+\end{DoxyReturn}
+\hypertarget{classCompanyCustomer_a29b36593a5cc93f3c6d9f9372b261bba}{}\label{classCompanyCustomer_a29b36593a5cc93f3c6d9f9372b261bba} 
+\index{Company\+Customer@{Company\+Customer}!get\+Customer\+Type@{get\+Customer\+Type}}
+\index{get\+Customer\+Type@{get\+Customer\+Type}!Company\+Customer@{Company\+Customer}}
+\subsubsection{\texorpdfstring{get\+Customer\+Type()}{getCustomerType()}}
+{\footnotesize\ttfamily \hyperlink{classCustomer_adf157cb713398bb38163743659ec3049}{Customer\+::\+C\+U\+S\+T\+O\+M\+E\+R\+\_\+\+T\+Y\+PE} Company\+Customer\+::get\+Customer\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This \char`\"{}enumerator\char`\"{} type restricts the types of existing customers 
+
+Implements \hyperlink{classCustomer_a0353fcbdcb8ec729d95e9086df828e34}{Customer}.
+
+\hypertarget{classCompanyCustomer_aa9af04558e4c90df0c2379456ae7b626}{}\label{classCompanyCustomer_aa9af04558e4c90df0c2379456ae7b626} 
+\index{Company\+Customer@{Company\+Customer}!get\+Discount@{get\+Discount}}
+\index{get\+Discount@{get\+Discount}!Company\+Customer@{Company\+Customer}}
+\subsubsection{\texorpdfstring{get\+Discount()}{getDiscount()}}
+{\footnotesize\ttfamily float Company\+Customer\+::get\+Discount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+If the date of the voucher is already available, return the value of the voucher. \begin{DoxyReturn}{Returns}
+value of company customer voucher 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCustomer_a55df4714c5be2c2978069eda6bc32ace}{Customer}.
+
+\hypertarget{classCompanyCustomer_a43dcc60f21c2b48e4af587314653d94d}{}\label{classCompanyCustomer_a43dcc60f21c2b48e4af587314653d94d} 
+\index{Company\+Customer@{Company\+Customer}!get\+Information@{get\+Information}}
+\index{get\+Information@{get\+Information}!Company\+Customer@{Company\+Customer}}
+\subsubsection{\texorpdfstring{get\+Information()}{getInformation()}}
+{\footnotesize\ttfamily string Company\+Customer\+::get\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the information of a customer in line. \begin{DoxyReturn}{Returns}
+string with the information of company customer service 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCustomer_ae13da50be281b8f266f463a2166cad66}{Customer}.
+
+\hypertarget{classCompanyCustomer_a20935ee3df903d3933c74e8bc2148402}{}\label{classCompanyCustomer_a20935ee3df903d3933c74e8bc2148402} 
+\index{Company\+Customer@{Company\+Customer}!reset\+Cost@{reset\+Cost}}
+\index{reset\+Cost@{reset\+Cost}!Company\+Customer@{Company\+Customer}}
+\subsubsection{\texorpdfstring{reset\+Cost()}{resetCost()}}
+{\footnotesize\ttfamily void Company\+Customer\+::reset\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the company customer cost \hypertarget{classCompanyCustomer_aae3bd828d590b136e6ca407ef6f47350}{}\label{classCompanyCustomer_aae3bd828d590b136e6ca407ef6f47350} 
+\index{Company\+Customer@{Company\+Customer}!to\+File\+Format@{to\+File\+Format}}
+\index{to\+File\+Format@{to\+File\+Format}!Company\+Customer@{Company\+Customer}}
+\subsubsection{\texorpdfstring{to\+File\+Format()}{toFileFormat()}}
+{\footnotesize\ttfamily string Company\+Customer\+::to\+File\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Put the information of a customer in the format needed. \begin{DoxyReturn}{Returns}
+string with all information of the customer in the format needed. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCustomer_aa609cffee22046082003ea0ac3c191af}{Customer}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCompanyCustomer_a69dd60239a6ccfef6c444e64975fb5d7}{}\label{classCompanyCustomer_a69dd60239a6ccfef6c444e64975fb5d7} 
+\index{Company\+Customer@{Company\+Customer}!cost@{cost}}
+\index{cost@{cost}!Company\+Customer@{Company\+Customer}}
+\subsubsection{\texorpdfstring{cost}{cost}}
+{\footnotesize\ttfamily double Company\+Customer\+::cost\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classCompanyCustomer_a19915d197c698ef79c608a6ca1f178fe}{}\label{classCompanyCustomer_a19915d197c698ef79c608a6ca1f178fe} 
+\index{Company\+Customer@{Company\+Customer}!voucher@{voucher}}
+\index{voucher@{voucher}!Company\+Customer@{Company\+Customer}}
+\subsubsection{\texorpdfstring{voucher}{voucher}}
+{\footnotesize\ttfamily \hyperlink{classVoucher}{Voucher}$\ast$ Company\+Customer\+::voucher\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{CompanyCustomer_8h}{Company\+Customer.\+h}\item 
+src/\hyperlink{CompanyCustomer_8cpp}{Company\+Customer.\+cpp}\end{DoxyCompactItemize}

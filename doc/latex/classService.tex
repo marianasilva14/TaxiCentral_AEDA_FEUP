@@ -1,0 +1,235 @@
+\hypertarget{classService}{}\section{Service Class Reference}
+\label{classService}\index{Service@{Service}}
+
+
+{\ttfamily \#include $<$Service.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classService_a95b72be1a13715eda67acd99698ca0b4}{Service} (\hyperlink{classCustomer}{Customer} $\ast$\hyperlink{classService_a1dbb66a7a35562c9f4b7f1654c286d75}{customer}, double \hyperlink{classService_a2ce3309e0dff48b5fe242512df62784b}{cost}, \hyperlink{classRoute}{Route} $\ast$\hyperlink{classService_a3059a95085ce11e13a69ff19bc919f9a}{route}, \hyperlink{classDate}{Date} \hyperlink{classService_a00e1fb44faf15d76b7633b888780baeb}{date}, int \hyperlink{classService_ad48b41e25edbf42e8f0a0314adc8de4e}{time}, string \hyperlink{classService_a832536bb266da871d50d14226bba3ac0}{payment})
+\item 
+\hyperlink{classService_af6c3577b59652ac817d1d76aaccee904}{$\sim$\+Service} ()
+\item 
+\hyperlink{classCustomer}{Customer} $\ast$ \hyperlink{classService_a8f1201be847de0e1209c6dbc6e31b169}{get\+Customer} ()
+\item 
+double \hyperlink{classService_aba6ad9ce7b18fd9b9317166d34e74332}{get\+Cost} ()
+\item 
+\hyperlink{classRoute}{Route} $\ast$ \hyperlink{classService_a5c8aedeb788fac846e5862f7c4af9853}{get\+Route} ()
+\item 
+\hyperlink{classDate}{Date} \hyperlink{classService_af0a4561b2506893b9026ca31afef179a}{get\+Date} ()
+\item 
+int \hyperlink{classService_a10995791b3188543e2f96c820717a17c}{get\+Time} ()
+\item 
+string \hyperlink{classService_aa0a732dc04ba4ec18709575f1dcdfee5}{get\+Timein\+Format} ()
+\item 
+\hyperlink{Service_8h_a484d0c1796736fcbe8a3a730617b663f}{P\+A\+Y\+M\+E\+N\+T\+\_\+\+T\+Y\+PE} \hyperlink{classService_a83ce29e76b859a6feb292f4f39661eaa}{get\+Payment} ()
+\item 
+string \hyperlink{classService_a8c484a24407d965fec9d9a292d58cefb}{get\+Information} ()
+\item 
+string \hyperlink{classService_a029d5a0362c6bca5cd6c8dd1c49f9f44}{get\+Payment\+As\+String} ()
+\item 
+string \hyperlink{classService_a4b8752741b37817a03bfc1e756174550}{to\+File\+Format} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{classService_aee8dfc7647ae55570b8240b9dff699f4}{rate\+For\+Km} = 1.\+0
+\item 
+static double \hyperlink{classService_a6b98e1285e0eebbcddeab247336d0eb5}{rate\+For\+Extra\+Min} = 0.\+5
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCustomer}{Customer} $\ast$ \hyperlink{classService_a1dbb66a7a35562c9f4b7f1654c286d75}{customer}
+\item 
+double \hyperlink{classService_a2ce3309e0dff48b5fe242512df62784b}{cost}
+\item 
+\hyperlink{classRoute}{Route} $\ast$ \hyperlink{classService_a3059a95085ce11e13a69ff19bc919f9a}{route}
+\item 
+\hyperlink{classDate}{Date} \hyperlink{classService_a00e1fb44faf15d76b7633b888780baeb}{date}
+\item 
+int \hyperlink{classService_ad48b41e25edbf42e8f0a0314adc8de4e}{time}
+\item 
+\hyperlink{Service_8h_a484d0c1796736fcbe8a3a730617b663f}{P\+A\+Y\+M\+E\+N\+T\+\_\+\+T\+Y\+PE} \hyperlink{classService_a832536bb266da871d50d14226bba3ac0}{payment}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classService_a95b72be1a13715eda67acd99698ca0b4}{}\label{classService_a95b72be1a13715eda67acd99698ca0b4} 
+\index{Service@{Service}!Service@{Service}}
+\index{Service@{Service}!Service@{Service}}
+\subsubsection{\texorpdfstring{Service()}{Service()}}
+{\footnotesize\ttfamily Service\+::\+Service (\begin{DoxyParamCaption}\item[{\hyperlink{classCustomer}{Customer} $\ast$}]{customer,  }\item[{double}]{cost,  }\item[{\hyperlink{classRoute}{Route} $\ast$}]{route,  }\item[{\hyperlink{classDate}{Date}}]{date,  }\item[{int}]{time,  }\item[{string}]{payment }\end{DoxyParamCaption})}
+
+The constructor of the \hyperlink{classService}{Service} class, where the elements are initialized. 
+\begin{DoxyParams}{Parameters}
+{\em customer} & customer service \\
+\hline
+{\em cost} & total value of the services performed by the customer \\
+\hline
+{\em route} & service route \\
+\hline
+{\em date} & service date \\
+\hline
+{\em time} & duration of service \\
+\hline
+{\em payment} & service type of payment \\
+\hline
+\end{DoxyParams}
+\hypertarget{classService_af6c3577b59652ac817d1d76aaccee904}{}\label{classService_af6c3577b59652ac817d1d76aaccee904} 
+\index{Service@{Service}!````~Service@{$\sim$\+Service}}
+\index{````~Service@{$\sim$\+Service}!Service@{Service}}
+\subsubsection{\texorpdfstring{$\sim$\+Service()}{~Service()}}
+{\footnotesize\ttfamily Service\+::$\sim$\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classService_aba6ad9ce7b18fd9b9317166d34e74332}{}\label{classService_aba6ad9ce7b18fd9b9317166d34e74332} 
+\index{Service@{Service}!get\+Cost@{get\+Cost}}
+\index{get\+Cost@{get\+Cost}!Service@{Service}}
+\subsubsection{\texorpdfstring{get\+Cost()}{getCost()}}
+{\footnotesize\ttfamily double Service\+::get\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cost is a private double of the \hyperlink{classService}{Service} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+total value of the services performed by the customer 
+\end{DoxyReturn}
+\hypertarget{classService_a8f1201be847de0e1209c6dbc6e31b169}{}\label{classService_a8f1201be847de0e1209c6dbc6e31b169} 
+\index{Service@{Service}!get\+Customer@{get\+Customer}}
+\index{get\+Customer@{get\+Customer}!Service@{Service}}
+\subsubsection{\texorpdfstring{get\+Customer()}{getCustomer()}}
+{\footnotesize\ttfamily \hyperlink{classCustomer}{Customer} $\ast$ Service\+::get\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{classCustomer}{Customer} is a private customer of the \hyperlink{classService}{Service} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+customer service 
+\end{DoxyReturn}
+\hypertarget{classService_af0a4561b2506893b9026ca31afef179a}{}\label{classService_af0a4561b2506893b9026ca31afef179a} 
+\index{Service@{Service}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!Service@{Service}}
+\subsubsection{\texorpdfstring{get\+Date()}{getDate()}}
+{\footnotesize\ttfamily \hyperlink{classDate}{Date} Service\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{classDate}{Date} is a private date of the \hyperlink{classService}{Service} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+service date 
+\end{DoxyReturn}
+\hypertarget{classService_a8c484a24407d965fec9d9a292d58cefb}{}\label{classService_a8c484a24407d965fec9d9a292d58cefb} 
+\index{Service@{Service}!get\+Information@{get\+Information}}
+\index{get\+Information@{get\+Information}!Service@{Service}}
+\subsubsection{\texorpdfstring{get\+Information()}{getInformation()}}
+{\footnotesize\ttfamily string Service\+::get\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get a service information in line with the services table. \begin{DoxyReturn}{Returns}
+a string with the service information 
+\end{DoxyReturn}
+\hypertarget{classService_a83ce29e76b859a6feb292f4f39661eaa}{}\label{classService_a83ce29e76b859a6feb292f4f39661eaa} 
+\index{Service@{Service}!get\+Payment@{get\+Payment}}
+\index{get\+Payment@{get\+Payment}!Service@{Service}}
+\subsubsection{\texorpdfstring{get\+Payment()}{getPayment()}}
+{\footnotesize\ttfamily \hyperlink{Service_8h_a484d0c1796736fcbe8a3a730617b663f}{P\+A\+Y\+M\+E\+N\+T\+\_\+\+T\+Y\+PE} Service\+::get\+Payment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This \char`\"{}enumerator\char`\"{} type restricts existing payment types \begin{DoxyReturn}{Returns}
+payment type 
+\end{DoxyReturn}
+\hypertarget{classService_a029d5a0362c6bca5cd6c8dd1c49f9f44}{}\label{classService_a029d5a0362c6bca5cd6c8dd1c49f9f44} 
+\index{Service@{Service}!get\+Payment\+As\+String@{get\+Payment\+As\+String}}
+\index{get\+Payment\+As\+String@{get\+Payment\+As\+String}!Service@{Service}}
+\subsubsection{\texorpdfstring{get\+Payment\+As\+String()}{getPaymentAsString()}}
+{\footnotesize\ttfamily string Service\+::get\+Payment\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the payment as a string \begin{DoxyReturn}{Returns}
+a string with the payment type 
+\end{DoxyReturn}
+\hypertarget{classService_a5c8aedeb788fac846e5862f7c4af9853}{}\label{classService_a5c8aedeb788fac846e5862f7c4af9853} 
+\index{Service@{Service}!get\+Route@{get\+Route}}
+\index{get\+Route@{get\+Route}!Service@{Service}}
+\subsubsection{\texorpdfstring{get\+Route()}{getRoute()}}
+{\footnotesize\ttfamily \hyperlink{classRoute}{Route} $\ast$ Service\+::get\+Route (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{classRoute}{Route} is a private route of the \hyperlink{classService}{Service} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+service route 
+\end{DoxyReturn}
+\hypertarget{classService_a10995791b3188543e2f96c820717a17c}{}\label{classService_a10995791b3188543e2f96c820717a17c} 
+\index{Service@{Service}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!Service@{Service}}
+\subsubsection{\texorpdfstring{get\+Time()}{getTime()}}
+{\footnotesize\ttfamily int Service\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Time is a private integer of the \hyperlink{classService}{Service} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+service time 
+\end{DoxyReturn}
+\hypertarget{classService_aa0a732dc04ba4ec18709575f1dcdfee5}{}\label{classService_aa0a732dc04ba4ec18709575f1dcdfee5} 
+\index{Service@{Service}!get\+Timein\+Format@{get\+Timein\+Format}}
+\index{get\+Timein\+Format@{get\+Timein\+Format}!Service@{Service}}
+\subsubsection{\texorpdfstring{get\+Timein\+Format()}{getTimeinFormat()}}
+{\footnotesize\ttfamily string Service\+::get\+Timein\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the time with the following format\+: \char`\"{}15h30m\char`\"{}. \begin{DoxyReturn}{Returns}
+a string with the time in the format needed 
+\end{DoxyReturn}
+\hypertarget{classService_a4b8752741b37817a03bfc1e756174550}{}\label{classService_a4b8752741b37817a03bfc1e756174550} 
+\index{Service@{Service}!to\+File\+Format@{to\+File\+Format}}
+\index{to\+File\+Format@{to\+File\+Format}!Service@{Service}}
+\subsubsection{\texorpdfstring{to\+File\+Format()}{toFileFormat()}}
+{\footnotesize\ttfamily string Service\+::to\+File\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Put a service information in the format needed. \begin{DoxyReturn}{Returns}
+a string with all information of the services in the format needed 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classService_a2ce3309e0dff48b5fe242512df62784b}{}\label{classService_a2ce3309e0dff48b5fe242512df62784b} 
+\index{Service@{Service}!cost@{cost}}
+\index{cost@{cost}!Service@{Service}}
+\subsubsection{\texorpdfstring{cost}{cost}}
+{\footnotesize\ttfamily double Service\+::cost\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classService_a1dbb66a7a35562c9f4b7f1654c286d75}{}\label{classService_a1dbb66a7a35562c9f4b7f1654c286d75} 
+\index{Service@{Service}!customer@{customer}}
+\index{customer@{customer}!Service@{Service}}
+\subsubsection{\texorpdfstring{customer}{customer}}
+{\footnotesize\ttfamily \hyperlink{classCustomer}{Customer}$\ast$ Service\+::customer\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classService_a00e1fb44faf15d76b7633b888780baeb}{}\label{classService_a00e1fb44faf15d76b7633b888780baeb} 
+\index{Service@{Service}!date@{date}}
+\index{date@{date}!Service@{Service}}
+\subsubsection{\texorpdfstring{date}{date}}
+{\footnotesize\ttfamily \hyperlink{classDate}{Date} Service\+::date\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classService_a832536bb266da871d50d14226bba3ac0}{}\label{classService_a832536bb266da871d50d14226bba3ac0} 
+\index{Service@{Service}!payment@{payment}}
+\index{payment@{payment}!Service@{Service}}
+\subsubsection{\texorpdfstring{payment}{payment}}
+{\footnotesize\ttfamily \hyperlink{Service_8h_a484d0c1796736fcbe8a3a730617b663f}{P\+A\+Y\+M\+E\+N\+T\+\_\+\+T\+Y\+PE} Service\+::payment\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classService_a6b98e1285e0eebbcddeab247336d0eb5}{}\label{classService_a6b98e1285e0eebbcddeab247336d0eb5} 
+\index{Service@{Service}!rate\+For\+Extra\+Min@{rate\+For\+Extra\+Min}}
+\index{rate\+For\+Extra\+Min@{rate\+For\+Extra\+Min}!Service@{Service}}
+\subsubsection{\texorpdfstring{rate\+For\+Extra\+Min}{rateForExtraMin}}
+{\footnotesize\ttfamily double Service\+::rate\+For\+Extra\+Min = 0.\+5\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{classService_aee8dfc7647ae55570b8240b9dff699f4}{}\label{classService_aee8dfc7647ae55570b8240b9dff699f4} 
+\index{Service@{Service}!rate\+For\+Km@{rate\+For\+Km}}
+\index{rate\+For\+Km@{rate\+For\+Km}!Service@{Service}}
+\subsubsection{\texorpdfstring{rate\+For\+Km}{rateForKm}}
+{\footnotesize\ttfamily double Service\+::rate\+For\+Km = 1.\+0\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{classService_a3059a95085ce11e13a69ff19bc919f9a}{}\label{classService_a3059a95085ce11e13a69ff19bc919f9a} 
+\index{Service@{Service}!route@{route}}
+\index{route@{route}!Service@{Service}}
+\subsubsection{\texorpdfstring{route}{route}}
+{\footnotesize\ttfamily \hyperlink{classRoute}{Route}$\ast$ Service\+::route\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classService_ad48b41e25edbf42e8f0a0314adc8de4e}{}\label{classService_ad48b41e25edbf42e8f0a0314adc8de4e} 
+\index{Service@{Service}!time@{time}}
+\index{time@{time}!Service@{Service}}
+\subsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily int Service\+::time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Service_8h}{Service.\+h}\item 
+src/\hyperlink{Service_8cpp}{Service.\+cpp}\end{DoxyCompactItemize}

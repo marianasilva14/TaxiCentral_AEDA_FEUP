@@ -1,0 +1,44 @@
+43
+Braga;Porto;57.1;37
+Porto;Braga;57;37
+Lisboa;Porto;313;190
+Aveiro;Porto;77;65
+Porto;Aveiro;77;65
+Porto;Viseu;130;107
+Viseu;Porto;130;107
+Porto;Maia;11;26
+Maia;Porto;11;26
+Porto;Gondomar;12;25
+Gondomar;Porto;12;25
+Porto;Viana do Castelo;75;70
+Viana do Castelo;Porto;75;70
+Porto;Matosinhos;9;24
+Matosinhos;Porto;9;24
+Porto;Gaia;7;23
+Gaia;Porto;7;23
+Porto;Faro;552;386
+Faro;Porto;552;386
+Porto;Rio Tinto;7;28
+Rio Tinto;Porto;7;28
+Matosinhos;Maia;11;13
+Maia;Matosinhos;11;13
+Matosinhos;Gaia;10;15
+Gaia;Matosinhos;10;15
+Lisboa;Braga;365;289
+Braga;Lisboa;365;289
+Lisboa;Aveiro;255;209
+Aveiro;Lisboa;255;209
+Lisboa;Faro;279;208
+Faro;Lisboa;279;208
+Lisboa;Viseu;294;237
+Viseu;Lisboa;294;237
+Lisboa;Evora;134;180
+Evora;Lisboa;134;180
+Lisboa;Braganca;485;307
+Braganca;Lisboa;485;307
+Faro;Santarem;306;212
+Santarem;Faro;306;212
+Porto;Braganca;205;170
+Porto;Portimao;541;394
+Porto;Lisboa;313;190
+Porto;Chaves;200;75

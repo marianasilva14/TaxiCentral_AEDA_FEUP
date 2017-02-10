@@ -1,0 +1,164 @@
+\hypertarget{classPrivateCustomer}{}\section{Private\+Customer Class Reference}
+\label{classPrivateCustomer}\index{Private\+Customer@{Private\+Customer}}
+
+
+{\ttfamily \#include $<$Private\+Customer.\+h$>$}
+
+Inheritance diagram for Private\+Customer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPrivateCustomer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPrivateCustomer_ab9d59484ad8056c18e470d247d6c5fa6}{Private\+Customer} (unsigned int \hyperlink{classCustomer_a65ad3329532d5ad31e36f4ac81858e31}{nif}, string \hyperlink{classCustomer_a42c1c948fa0121c82b2725826d9f8300}{name}, string \hyperlink{classCustomer_a72d87951c1b76883390d00baf044cf2c}{address}, int \hyperlink{classCustomer_ad8c8d99b4c35f66a1a87b234c6078e0f}{phone\+Number}, int \hyperlink{classPrivateCustomer_a1dd69e30a5c32c3cab647f96eaa89325}{points})
+\item 
+\hyperlink{classPrivateCustomer_a916690ac1f0e8e28e9aeff4bb207169e}{$\sim$\+Private\+Customer} ()
+\item 
+int \hyperlink{classPrivateCustomer_ad8c8c1ff1cf54e6e60d73b7c6806e699}{get\+Points} ()
+\item 
+float \hyperlink{classPrivateCustomer_a4757f4e3cb5e0e74891e8f1b37a07277}{get\+Discount} ()
+\item 
+void \hyperlink{classPrivateCustomer_a22e7d589398c26ac37973660f6e6f338}{accumulate\+Service} (\hyperlink{classService}{Service} $\ast$service)
+\item 
+\hyperlink{classCustomer_adf157cb713398bb38163743659ec3049}{C\+U\+S\+T\+O\+M\+E\+R\+\_\+\+T\+Y\+PE} \hyperlink{classPrivateCustomer_a07d4d3e5995758b2407b8a81e35e579a}{get\+Customer\+Type} ()
+\item 
+string \hyperlink{classPrivateCustomer_afcf22c4a25e9c961d045aa5a0d8d9fd2}{get\+Information} ()
+\item 
+string \hyperlink{classPrivateCustomer_adb678cbc09d9e4a8e9e4ab0d556b8b6c}{to\+File\+Format} ()
+\item 
+void \hyperlink{classPrivateCustomer_a2e633d2d89e3ce4696e810ddb8c64bd0}{reset\+Points} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classPrivateCustomer_a1dd69e30a5c32c3cab647f96eaa89325}{points}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPrivateCustomer_ab9d59484ad8056c18e470d247d6c5fa6}{}\label{classPrivateCustomer_ab9d59484ad8056c18e470d247d6c5fa6} 
+\index{Private\+Customer@{Private\+Customer}!Private\+Customer@{Private\+Customer}}
+\index{Private\+Customer@{Private\+Customer}!Private\+Customer@{Private\+Customer}}
+\subsubsection{\texorpdfstring{Private\+Customer()}{PrivateCustomer()}}
+{\footnotesize\ttfamily Private\+Customer\+::\+Private\+Customer (\begin{DoxyParamCaption}\item[{unsigned int}]{nif,  }\item[{string}]{name,  }\item[{string}]{address,  }\item[{int}]{phone\+Number,  }\item[{int}]{points }\end{DoxyParamCaption})}
+
+The constructor of the private customer class, where the elements are initialized. 
+\begin{DoxyParams}{Parameters}
+{\em nif} & customer nif \\
+\hline
+{\em name} & customer name \\
+\hline
+{\em address} & customer address \\
+\hline
+{\em phone\+Number} & customer phone number \\
+\hline
+{\em points} & customer points \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPrivateCustomer_a916690ac1f0e8e28e9aeff4bb207169e}{}\label{classPrivateCustomer_a916690ac1f0e8e28e9aeff4bb207169e} 
+\index{Private\+Customer@{Private\+Customer}!````~Private\+Customer@{$\sim$\+Private\+Customer}}
+\index{````~Private\+Customer@{$\sim$\+Private\+Customer}!Private\+Customer@{Private\+Customer}}
+\subsubsection{\texorpdfstring{$\sim$\+Private\+Customer()}{~PrivateCustomer()}}
+{\footnotesize\ttfamily Private\+Customer\+::$\sim$\+Private\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classPrivateCustomer_a22e7d589398c26ac37973660f6e6f338}{}\label{classPrivateCustomer_a22e7d589398c26ac37973660f6e6f338} 
+\index{Private\+Customer@{Private\+Customer}!accumulate\+Service@{accumulate\+Service}}
+\index{accumulate\+Service@{accumulate\+Service}!Private\+Customer@{Private\+Customer}}
+\subsubsection{\texorpdfstring{accumulate\+Service()}{accumulateService()}}
+{\footnotesize\ttfamily void Private\+Customer\+::accumulate\+Service (\begin{DoxyParamCaption}\item[{\hyperlink{classService}{Service} $\ast$}]{service }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Function that accumulate the service points. 
+\begin{DoxyParams}{Parameters}
+{\em service} & Private customer service \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classCustomer_ab42320f3e4d1c23e745ce901d30faf77}{Customer}.
+
+\hypertarget{classPrivateCustomer_a07d4d3e5995758b2407b8a81e35e579a}{}\label{classPrivateCustomer_a07d4d3e5995758b2407b8a81e35e579a} 
+\index{Private\+Customer@{Private\+Customer}!get\+Customer\+Type@{get\+Customer\+Type}}
+\index{get\+Customer\+Type@{get\+Customer\+Type}!Private\+Customer@{Private\+Customer}}
+\subsubsection{\texorpdfstring{get\+Customer\+Type()}{getCustomerType()}}
+{\footnotesize\ttfamily \hyperlink{classCustomer_adf157cb713398bb38163743659ec3049}{Customer\+::\+C\+U\+S\+T\+O\+M\+E\+R\+\_\+\+T\+Y\+PE} Private\+Customer\+::get\+Customer\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This \char`\"{}enumerator\char`\"{} type restricts the types of existing customers \begin{DoxyReturn}{Returns}
+private customer 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCustomer_a0353fcbdcb8ec729d95e9086df828e34}{Customer}.
+
+\hypertarget{classPrivateCustomer_a4757f4e3cb5e0e74891e8f1b37a07277}{}\label{classPrivateCustomer_a4757f4e3cb5e0e74891e8f1b37a07277} 
+\index{Private\+Customer@{Private\+Customer}!get\+Discount@{get\+Discount}}
+\index{get\+Discount@{get\+Discount}!Private\+Customer@{Private\+Customer}}
+\subsubsection{\texorpdfstring{get\+Discount()}{getDiscount()}}
+{\footnotesize\ttfamily float Private\+Customer\+::get\+Discount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Function that through the points, get the discounts. If the points are less than 50, the customer doesn\textquotesingle{}t have discount. If the points are more than 50 and less than 100, the discount is 0,1 percent. If the points are more than 100 and less than 150, the discount is 0,2 percent. If the points are more than 150 and less than 200, the discount is 0,3 percent. If the points are more than 200 and less than 250, the discount is 0,4 percent. If the points are more than 250, the discount is 0,5 percent. \begin{DoxyReturn}{Returns}
+the percent discount 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCustomer_a55df4714c5be2c2978069eda6bc32ace}{Customer}.
+
+\hypertarget{classPrivateCustomer_afcf22c4a25e9c961d045aa5a0d8d9fd2}{}\label{classPrivateCustomer_afcf22c4a25e9c961d045aa5a0d8d9fd2} 
+\index{Private\+Customer@{Private\+Customer}!get\+Information@{get\+Information}}
+\index{get\+Information@{get\+Information}!Private\+Customer@{Private\+Customer}}
+\subsubsection{\texorpdfstring{get\+Information()}{getInformation()}}
+{\footnotesize\ttfamily string Private\+Customer\+::get\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get a private customer information in line. \begin{DoxyReturn}{Returns}
+a string with the customer information 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCustomer_ae13da50be281b8f266f463a2166cad66}{Customer}.
+
+\hypertarget{classPrivateCustomer_ad8c8c1ff1cf54e6e60d73b7c6806e699}{}\label{classPrivateCustomer_ad8c8c1ff1cf54e6e60d73b7c6806e699} 
+\index{Private\+Customer@{Private\+Customer}!get\+Points@{get\+Points}}
+\index{get\+Points@{get\+Points}!Private\+Customer@{Private\+Customer}}
+\subsubsection{\texorpdfstring{get\+Points()}{getPoints()}}
+{\footnotesize\ttfamily int Private\+Customer\+::get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Points is a private integer of the private customer class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \hypertarget{classPrivateCustomer_a2e633d2d89e3ce4696e810ddb8c64bd0}{}\label{classPrivateCustomer_a2e633d2d89e3ce4696e810ddb8c64bd0} 
+\index{Private\+Customer@{Private\+Customer}!reset\+Points@{reset\+Points}}
+\index{reset\+Points@{reset\+Points}!Private\+Customer@{Private\+Customer}}
+\subsubsection{\texorpdfstring{reset\+Points()}{resetPoints()}}
+{\footnotesize\ttfamily void Private\+Customer\+::reset\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset the customer points \hypertarget{classPrivateCustomer_adb678cbc09d9e4a8e9e4ab0d556b8b6c}{}\label{classPrivateCustomer_adb678cbc09d9e4a8e9e4ab0d556b8b6c} 
+\index{Private\+Customer@{Private\+Customer}!to\+File\+Format@{to\+File\+Format}}
+\index{to\+File\+Format@{to\+File\+Format}!Private\+Customer@{Private\+Customer}}
+\subsubsection{\texorpdfstring{to\+File\+Format()}{toFileFormat()}}
+{\footnotesize\ttfamily string Private\+Customer\+::to\+File\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a string with all information of the customer in the format needed. \begin{DoxyReturn}{Returns}
+a string with the customer information in the format needed 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCustomer_aa609cffee22046082003ea0ac3c191af}{Customer}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPrivateCustomer_a1dd69e30a5c32c3cab647f96eaa89325}{}\label{classPrivateCustomer_a1dd69e30a5c32c3cab647f96eaa89325} 
+\index{Private\+Customer@{Private\+Customer}!points@{points}}
+\index{points@{points}!Private\+Customer@{Private\+Customer}}
+\subsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily int Private\+Customer\+::points\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{PrivateCustomer_8h}{Private\+Customer.\+h}\item 
+src/\hyperlink{PrivateCustomer_8cpp}{Private\+Customer.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,275 @@
+\hypertarget{classCustomer}{}\section{Customer Class Reference}
+\label{classCustomer}\index{Customer@{Customer}}
+
+
+{\ttfamily \#include $<$Customer.\+h$>$}
+
+Inheritance diagram for Customer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCustomer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classCustomer_adf157cb713398bb38163743659ec3049}{C\+U\+S\+T\+O\+M\+E\+R\+\_\+\+T\+Y\+PE} \{ \hyperlink{classCustomer_adf157cb713398bb38163743659ec3049a6fd178caeb0cc24f8f4689d2d86de82b}{Company\+Customer}, 
+\hyperlink{classCustomer_adf157cb713398bb38163743659ec3049a74cbae8b7e90efe986479e433ab9a840}{Private\+Customer}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCustomer_a2bb6a353723debbd4f7ef22540b50b11}{Customer} (unsigned int \hyperlink{classCustomer_a65ad3329532d5ad31e36f4ac81858e31}{nif}, string \hyperlink{classCustomer_a42c1c948fa0121c82b2725826d9f8300}{name}, string \hyperlink{classCustomer_a72d87951c1b76883390d00baf044cf2c}{address}, int \hyperlink{classCustomer_ad8c8d99b4c35f66a1a87b234c6078e0f}{phone\+Number})
+\item 
+virtual \hyperlink{classCustomer_ab93fb14683b0393b9c900109f77c2629}{$\sim$\+Customer} ()
+\item 
+string \hyperlink{classCustomer_a1bda0c5a9b2f4bf0c3314832e95f2566}{get\+Name} ()
+\item 
+string \hyperlink{classCustomer_aebd5a3862a90a21ec56198a69dbe7f34}{get\+Address} ()
+\item 
+int \hyperlink{classCustomer_ab64569e18c4b32d8f18f2711a5c124e3}{get\+Phone\+Number} ()
+\item 
+float \hyperlink{classCustomer_a10b0bb2b55a819b80c9e14cb19a7c566}{get\+Points} ()
+\item 
+unsigned int \hyperlink{classCustomer_a7dfa684a44a1e83f9dfaf0db8df32e14}{get\+Nif} () const
+\item 
+void \hyperlink{classCustomer_a7f9fdbe148a20c2ac310ea52f0a5311f}{set\+Name} (string)
+\item 
+void \hyperlink{classCustomer_aa955fe10dc1855ca78353b1677f76639}{set\+Address} (string)
+\item 
+void \hyperlink{classCustomer_a9260f17157643a0f7e57e233f8441e9b}{set\+Phone\+Number} (int)
+\item 
+virtual float \hyperlink{classCustomer_a55df4714c5be2c2978069eda6bc32ace}{get\+Discount} ()=0
+\item 
+virtual void \hyperlink{classCustomer_ab42320f3e4d1c23e745ce901d30faf77}{accumulate\+Service} (\hyperlink{classService}{Service} $\ast$)=0
+\item 
+virtual \hyperlink{classCustomer_adf157cb713398bb38163743659ec3049}{C\+U\+S\+T\+O\+M\+E\+R\+\_\+\+T\+Y\+PE} \hyperlink{classCustomer_a0353fcbdcb8ec729d95e9086df828e34}{get\+Customer\+Type} ()=0
+\item 
+virtual string \hyperlink{classCustomer_ae13da50be281b8f266f463a2166cad66}{get\+Information} ()
+\item 
+virtual string \hyperlink{classCustomer_aa609cffee22046082003ea0ac3c191af}{to\+File\+Format} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classCustomer_a42c1c948fa0121c82b2725826d9f8300}{name}
+\item 
+string \hyperlink{classCustomer_a72d87951c1b76883390d00baf044cf2c}{address}
+\item 
+unsigned int \hyperlink{classCustomer_a65ad3329532d5ad31e36f4ac81858e31}{nif}
+\item 
+int \hyperlink{classCustomer_ad8c8d99b4c35f66a1a87b234c6078e0f}{phone\+Number}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classCustomer_adf157cb713398bb38163743659ec3049}{}\label{classCustomer_adf157cb713398bb38163743659ec3049} 
+\index{Customer@{Customer}!C\+U\+S\+T\+O\+M\+E\+R\+\_\+\+T\+Y\+PE@{C\+U\+S\+T\+O\+M\+E\+R\+\_\+\+T\+Y\+PE}}
+\index{C\+U\+S\+T\+O\+M\+E\+R\+\_\+\+T\+Y\+PE@{C\+U\+S\+T\+O\+M\+E\+R\+\_\+\+T\+Y\+PE}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{C\+U\+S\+T\+O\+M\+E\+R\+\_\+\+T\+Y\+PE}{CUSTOMER\_TYPE}}
+{\footnotesize\ttfamily enum \hyperlink{classCustomer_adf157cb713398bb38163743659ec3049}{Customer\+::\+C\+U\+S\+T\+O\+M\+E\+R\+\_\+\+T\+Y\+PE}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Company\+Customer@{Company\+Customer}!Customer@{Customer}}\index{Customer@{Customer}!Company\+Customer@{Company\+Customer}}}\hypertarget{classCustomer_adf157cb713398bb38163743659ec3049a6fd178caeb0cc24f8f4689d2d86de82b}{}\label{classCustomer_adf157cb713398bb38163743659ec3049a6fd178caeb0cc24f8f4689d2d86de82b} 
+Company\+Customer&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Private\+Customer@{Private\+Customer}!Customer@{Customer}}\index{Customer@{Customer}!Private\+Customer@{Private\+Customer}}}\hypertarget{classCustomer_adf157cb713398bb38163743659ec3049a74cbae8b7e90efe986479e433ab9a840}{}\label{classCustomer_adf157cb713398bb38163743659ec3049a74cbae8b7e90efe986479e433ab9a840} 
+Private\+Customer&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCustomer_a2bb6a353723debbd4f7ef22540b50b11}{}\label{classCustomer_a2bb6a353723debbd4f7ef22540b50b11} 
+\index{Customer@{Customer}!Customer@{Customer}}
+\index{Customer@{Customer}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{Customer()}{Customer()}}
+{\footnotesize\ttfamily Customer\+::\+Customer (\begin{DoxyParamCaption}\item[{unsigned int}]{nif,  }\item[{string}]{name,  }\item[{string}]{address,  }\item[{int}]{phone\+Number }\end{DoxyParamCaption})}
+
+The constructor of the \hyperlink{classCustomer}{Customer} class, where the elements are initialized. 
+\begin{DoxyParams}{Parameters}
+{\em nif} & customer nif \\
+\hline
+{\em name} & customer name \\
+\hline
+{\em address} & customer address \\
+\hline
+{\em phone\+Number} & customer phone number \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCustomer_ab93fb14683b0393b9c900109f77c2629}{}\label{classCustomer_ab93fb14683b0393b9c900109f77c2629} 
+\index{Customer@{Customer}!````~Customer@{$\sim$\+Customer}}
+\index{````~Customer@{$\sim$\+Customer}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{$\sim$\+Customer()}{~Customer()}}
+{\footnotesize\ttfamily Customer\+::$\sim$\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCustomer_ab42320f3e4d1c23e745ce901d30faf77}{}\label{classCustomer_ab42320f3e4d1c23e745ce901d30faf77} 
+\index{Customer@{Customer}!accumulate\+Service@{accumulate\+Service}}
+\index{accumulate\+Service@{accumulate\+Service}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{accumulate\+Service()}{accumulateService()}}
+{\footnotesize\ttfamily virtual void Customer\+::accumulate\+Service (\begin{DoxyParamCaption}\item[{\hyperlink{classService}{Service} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classCompanyCustomer_a904197ef9475d4309ac41cc54a2ae5a3}{Company\+Customer}, and \hyperlink{classPrivateCustomer_a22e7d589398c26ac37973660f6e6f338}{Private\+Customer}.
+
+\hypertarget{classCustomer_aebd5a3862a90a21ec56198a69dbe7f34}{}\label{classCustomer_aebd5a3862a90a21ec56198a69dbe7f34} 
+\index{Customer@{Customer}!get\+Address@{get\+Address}}
+\index{get\+Address@{get\+Address}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{get\+Address()}{getAddress()}}
+{\footnotesize\ttfamily string Customer\+::get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Address is a private string of the \hyperlink{classCustomer}{Customer} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+customer address 
+\end{DoxyReturn}
+\hypertarget{classCustomer_a0353fcbdcb8ec729d95e9086df828e34}{}\label{classCustomer_a0353fcbdcb8ec729d95e9086df828e34} 
+\index{Customer@{Customer}!get\+Customer\+Type@{get\+Customer\+Type}}
+\index{get\+Customer\+Type@{get\+Customer\+Type}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{get\+Customer\+Type()}{getCustomerType()}}
+{\footnotesize\ttfamily virtual \hyperlink{classCustomer_adf157cb713398bb38163743659ec3049}{C\+U\+S\+T\+O\+M\+E\+R\+\_\+\+T\+Y\+PE} Customer\+::get\+Customer\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classCompanyCustomer_a29b36593a5cc93f3c6d9f9372b261bba}{Company\+Customer}, and \hyperlink{classPrivateCustomer_a07d4d3e5995758b2407b8a81e35e579a}{Private\+Customer}.
+
+\hypertarget{classCustomer_a55df4714c5be2c2978069eda6bc32ace}{}\label{classCustomer_a55df4714c5be2c2978069eda6bc32ace} 
+\index{Customer@{Customer}!get\+Discount@{get\+Discount}}
+\index{get\+Discount@{get\+Discount}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{get\+Discount()}{getDiscount()}}
+{\footnotesize\ttfamily virtual float Customer\+::get\+Discount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classCompanyCustomer_aa9af04558e4c90df0c2379456ae7b626}{Company\+Customer}, and \hyperlink{classPrivateCustomer_a4757f4e3cb5e0e74891e8f1b37a07277}{Private\+Customer}.
+
+\hypertarget{classCustomer_ae13da50be281b8f266f463a2166cad66}{}\label{classCustomer_ae13da50be281b8f266f463a2166cad66} 
+\index{Customer@{Customer}!get\+Information@{get\+Information}}
+\index{get\+Information@{get\+Information}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{get\+Information()}{getInformation()}}
+{\footnotesize\ttfamily string Customer\+::get\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get a customer information in line with the customer table. \begin{DoxyReturn}{Returns}
+a string with the customer information 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classCompanyCustomer_a43dcc60f21c2b48e4af587314653d94d}{Company\+Customer}, and \hyperlink{classPrivateCustomer_afcf22c4a25e9c961d045aa5a0d8d9fd2}{Private\+Customer}.
+
+\hypertarget{classCustomer_a1bda0c5a9b2f4bf0c3314832e95f2566}{}\label{classCustomer_a1bda0c5a9b2f4bf0c3314832e95f2566} 
+\index{Customer@{Customer}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string Customer\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Name is a private string of the \hyperlink{classCustomer}{Customer} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+customer name 
+\end{DoxyReturn}
+\hypertarget{classCustomer_a7dfa684a44a1e83f9dfaf0db8df32e14}{}\label{classCustomer_a7dfa684a44a1e83f9dfaf0db8df32e14} 
+\index{Customer@{Customer}!get\+Nif@{get\+Nif}}
+\index{get\+Nif@{get\+Nif}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{get\+Nif()}{getNif()}}
+{\footnotesize\ttfamily unsigned int Customer\+::get\+Nif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Nif is a private unsigned integer of the \hyperlink{classCustomer}{Customer} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+customer nif 
+\end{DoxyReturn}
+\hypertarget{classCustomer_ab64569e18c4b32d8f18f2711a5c124e3}{}\label{classCustomer_ab64569e18c4b32d8f18f2711a5c124e3} 
+\index{Customer@{Customer}!get\+Phone\+Number@{get\+Phone\+Number}}
+\index{get\+Phone\+Number@{get\+Phone\+Number}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{get\+Phone\+Number()}{getPhoneNumber()}}
+{\footnotesize\ttfamily int Customer\+::get\+Phone\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Phone\+Number is a private integer of the \hyperlink{classCustomer}{Customer} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+customer phone number 
+\end{DoxyReturn}
+\hypertarget{classCustomer_a10b0bb2b55a819b80c9e14cb19a7c566}{}\label{classCustomer_a10b0bb2b55a819b80c9e14cb19a7c566} 
+\index{Customer@{Customer}!get\+Points@{get\+Points}}
+\index{get\+Points@{get\+Points}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{get\+Points()}{getPoints()}}
+{\footnotesize\ttfamily float Customer\+::get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classCustomer_aa955fe10dc1855ca78353b1677f76639}{}\label{classCustomer_aa955fe10dc1855ca78353b1677f76639} 
+\index{Customer@{Customer}!set\+Address@{set\+Address}}
+\index{set\+Address@{set\+Address}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{set\+Address()}{setAddress()}}
+{\footnotesize\ttfamily void Customer\+::set\+Address (\begin{DoxyParamCaption}\item[{string}]{address }\end{DoxyParamCaption})}
+
+Set the customer address. 
+\begin{DoxyParams}{Parameters}
+{\em customer} & address \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCustomer_a7f9fdbe148a20c2ac310ea52f0a5311f}{}\label{classCustomer_a7f9fdbe148a20c2ac310ea52f0a5311f} 
+\index{Customer@{Customer}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void Customer\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+Set the customer name. 
+\begin{DoxyParams}{Parameters}
+{\em customer} & name \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCustomer_a9260f17157643a0f7e57e233f8441e9b}{}\label{classCustomer_a9260f17157643a0f7e57e233f8441e9b} 
+\index{Customer@{Customer}!set\+Phone\+Number@{set\+Phone\+Number}}
+\index{set\+Phone\+Number@{set\+Phone\+Number}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{set\+Phone\+Number()}{setPhoneNumber()}}
+{\footnotesize\ttfamily void Customer\+::set\+Phone\+Number (\begin{DoxyParamCaption}\item[{int}]{phone\+Number }\end{DoxyParamCaption})}
+
+Set the customer phone number. 
+\begin{DoxyParams}{Parameters}
+{\em customer} & phone number \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCustomer_aa609cffee22046082003ea0ac3c191af}{}\label{classCustomer_aa609cffee22046082003ea0ac3c191af} 
+\index{Customer@{Customer}!to\+File\+Format@{to\+File\+Format}}
+\index{to\+File\+Format@{to\+File\+Format}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{to\+File\+Format()}{toFileFormat()}}
+{\footnotesize\ttfamily string Customer\+::to\+File\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a string with all information of the customer in the format needed. \begin{DoxyReturn}{Returns}
+a string with the customer information in the format needed 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classCompanyCustomer_aae3bd828d590b136e6ca407ef6f47350}{Company\+Customer}, and \hyperlink{classPrivateCustomer_adb678cbc09d9e4a8e9e4ab0d556b8b6c}{Private\+Customer}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCustomer_a72d87951c1b76883390d00baf044cf2c}{}\label{classCustomer_a72d87951c1b76883390d00baf044cf2c} 
+\index{Customer@{Customer}!address@{address}}
+\index{address@{address}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily string Customer\+::address\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classCustomer_a42c1c948fa0121c82b2725826d9f8300}{}\label{classCustomer_a42c1c948fa0121c82b2725826d9f8300} 
+\index{Customer@{Customer}!name@{name}}
+\index{name@{name}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Customer\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classCustomer_a65ad3329532d5ad31e36f4ac81858e31}{}\label{classCustomer_a65ad3329532d5ad31e36f4ac81858e31} 
+\index{Customer@{Customer}!nif@{nif}}
+\index{nif@{nif}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{nif}{nif}}
+{\footnotesize\ttfamily unsigned int Customer\+::nif\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classCustomer_ad8c8d99b4c35f66a1a87b234c6078e0f}{}\label{classCustomer_ad8c8d99b4c35f66a1a87b234c6078e0f} 
+\index{Customer@{Customer}!phone\+Number@{phone\+Number}}
+\index{phone\+Number@{phone\+Number}!Customer@{Customer}}
+\subsubsection{\texorpdfstring{phone\+Number}{phoneNumber}}
+{\footnotesize\ttfamily int Customer\+::phone\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Customer_8h}{Customer.\+h}\item 
+src/\hyperlink{Customer_8cpp}{Customer.\+cpp}\end{DoxyCompactItemize}

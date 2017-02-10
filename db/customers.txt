@@ -1,0 +1,22 @@
+21
+C;123456777;Empresa Ja Foste;Rua Do Apanhadinho Do Miolo Nº42, Matosinhos;916699752;0
+P;115471236;Mito Teresa;Rua Principal nº234, Matosinhos;928716027;0
+P;123456789;Catarina Almeida;Rua Humberto Delgado nº100, Porto;226699751;33
+C;144444899;Empresa xpto;Praca Jose Gomes nº89, Maia;928716027;0
+P;165698751;Manuela Moura;Rua Luis de Camoes nº10, Rio Tinto;928716027;0
+C;169874521;Empresa Ja Estava;Praca Sao Joao nº123, Porto;928716027;0
+C;178956985;Empresa abc;Largo do Comercio nº12, Porto;928716027;0
+C;185285287;Empresa corridinho;Rua Vicente Costa nº100, Coimbroes;928716027;0
+C;188889852;Empresa umdolita;Rua Teles Morais nº1234, Costoias;928716027;0
+P;215639877;Marta Marinho;Av. Luis Avedo Coutinho nº132, Senhora da hora;928716027;0
+P;221231231;Martinho Melro;Rua Mario Oliveira nº345, Valongo;928716027;0
+P;225395070;Ana Santos;Rua Do Carmo Nº100, Porto;916699751;0
+P;234567891;Eduarda Reis;Rua 25 de Abril nº10, Braga;928716027;6
+P;245678978;Maria de Lurdes;Rua Domingos Lopes nº45, Gaia;928716027;32
+C;277778883;Empresa Faz Tudo;Largo Vale Pereira nª232, Coimbra;928716027;0
+P;345678911;Joao Beires;Rua Da Santa Paciencia Nº23, Porto;928716027;21
+P;456789121;Jose Pereira;Rua Conde Casal nº123, Senhora da Hora;928716027;14
+P;456987789;Mariana Silva;Praca da Republica nº5467, Gaia;928716027;7
+P;567891231;Luis Teixeira;Travessa Jose Fagundes nº345, Porto;928716027;0
+P;778978979;Margarida Gomes;Travessa Esparido nº2, Gondomar;928716027;0
+P;987654321;Maria Albertina Reis;Rua monte de cima nº40;916699751;0

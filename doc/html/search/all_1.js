@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['cash',['Cash',['../Service_8h.html#a484d0c1796736fcbe8a3a730617b663fa22b020ea78bc55a582d02a2ee0024b8f',1,'Service.h']]],
+  ['centraltaxis',['CentralTaxis',['../classCentralTaxis.html',1,'CentralTaxis'],['../classCentralTaxis.html#aca0cca3a2df44dadf8bfcb71b3636739',1,'CentralTaxis::CentralTaxis()']]],
+  ['centraltaxis_2ecpp',['CentralTaxis.cpp',['../CentralTaxis_8cpp.html',1,'']]],
+  ['centraltaxis_2eh',['CentralTaxis.h',['../CentralTaxis_8h.html',1,'']]],
+  ['cleandisplay',['cleanDisplay',['../utilities_8h.html#a3d68b6c1fe869b6da9019f88ad6d68c2',1,'utilities.h']]],
+  ['companycustomer',['CompanyCustomer',['../classCompanyCustomer.html',1,'CompanyCustomer'],['../classCustomer.html#adf157cb713398bb38163743659ec3049a6fd178caeb0cc24f8f4689d2d86de82b',1,'Customer::CompanyCustomer()'],['../classCompanyCustomer.html#a525a581a4b955657234bab5761ae2f02',1,'CompanyCustomer::CompanyCustomer(unsigned int nif, string name, string address, int phoneNumber, double cost)'],['../classCompanyCustomer.html#af95c687f20e167f7df7e6fcee1493e7f',1,'CompanyCustomer::CompanyCustomer(unsigned int nif, string name, string address, int phoneNumber, double cost, Voucher *voucher)']]],
+  ['companycustomer_2ecpp',['CompanyCustomer.cpp',['../CompanyCustomer_8cpp.html',1,'']]],
+  ['companycustomer_2eh',['CompanyCustomer.h',['../CompanyCustomer_8h.html',1,'']]],
+  ['comparebydate',['compareByDate',['../Service_8cpp.html#a4e05fae612d5472051492ccf4ddaa07b',1,'Service.cpp']]],
+  ['comparebyname',['compareByName',['../Customer_8cpp.html#a7eb95f72d44978124a93a2581cadf3d4',1,'Customer.cpp']]],
+  ['comparebynif',['compareByNif',['../Customer_8cpp.html#aff13f62e3bc97fd5254daa68a4e5edaa',1,'compareByNif(Customer *nif_a, Customer *nif_b):&#160;Customer.cpp'],['../Customer_8h.html#ae7029443c3d6f9bfc3ef4fd285b07f5c',1,'compareByNif(Customer *, Customer *):&#160;Customer.cpp']]],
+  ['cost',['cost',['../classCompanyCustomer.html#a69dd60239a6ccfef6c444e64975fb5d7',1,'CompanyCustomer::cost()'],['../classService.html#a2ce3309e0dff48b5fe242512df62784b',1,'Service::cost()']]],
+  ['credit',['Credit',['../Service_8h.html#a484d0c1796736fcbe8a3a730617b663fa5c46d0dcaab93652623eb0644bff1d08',1,'Service.h']]],
+  ['customer',['Customer',['../classCustomer.html',1,'Customer'],['../classCustomer.html#a2bb6a353723debbd4f7ef22540b50b11',1,'Customer::Customer()'],['../classService.html#a1dbb66a7a35562c9f4b7f1654c286d75',1,'Service::customer()']]],
+  ['customer_2ecpp',['Customer.cpp',['../Customer_8cpp.html',1,'']]],
+  ['customer_2eh',['Customer.h',['../Customer_8h.html',1,'']]],
+  ['customer_5ftype',['CUSTOMER_TYPE',['../classCustomer.html#adf157cb713398bb38163743659ec3049',1,'Customer']]],
+  ['customerexists',['customerExists',['../Customer_8cpp.html#ade28623b01af60703a7add5a1b62b831',1,'customerExists(unsigned int nif, vector&lt; Customer *&gt; customers):&#160;Customer.cpp'],['../Customer_8h.html#a3c808b66a421907992cb79b6b7398351',1,'customerExists(unsigned int, vector&lt; Customer *&gt;):&#160;Customer.cpp']]],
+  ['customermenutype',['customerMenuType',['../Menu_8cpp.html#a45332f7bf7ffd060220389e78b189ea4',1,'customerMenuType(CentralTaxis &amp;central):&#160;Menu.cpp'],['../Menu_8h.html#a45332f7bf7ffd060220389e78b189ea4',1,'customerMenuType(CentralTaxis &amp;central):&#160;Menu.cpp']]],
+  ['customers',['customers',['../classCentralTaxis.html#a5418c7eb3c09a2037e4802630c53f5ee',1,'CentralTaxis']]],
+  ['customersfile',['customersFile',['../classCentralTaxis.html#a658c8ac7923a5f759da1545a21416532',1,'CentralTaxis']]],
+  ['customersmenu',['customersMenu',['../Menu_8cpp.html#af8ba7bf343f432337a048b3a537378ed',1,'customersMenu(CentralTaxis &amp;central):&#160;Menu.cpp'],['../Menu_8h.html#af8ba7bf343f432337a048b3a537378ed',1,'customersMenu(CentralTaxis &amp;central):&#160;Menu.cpp']]]
+];

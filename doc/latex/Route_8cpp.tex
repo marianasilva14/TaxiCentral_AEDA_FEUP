@@ -1,0 +1,62 @@
+\hypertarget{Route_8cpp}{}\section{src/\+Route.cpp File Reference}
+\label{Route_8cpp}\index{src/\+Route.\+cpp@{src/\+Route.\+cpp}}
+{\ttfamily \#include \char`\"{}Route.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{Route_8cpp_a4ae99f58758475c2231df8e4c2913a6f}{read\+Distance} ()
+\item 
+int \hyperlink{Route_8cpp_a7103bb70ea26b0bbe5b4e3ae687f9b25}{read\+Expected\+Time} ()
+\item 
+void \hyperlink{Route_8cpp_a877a81d8143074fd7ec553cbca8951a7}{show\+Available\+Routes} (vector$<$ \hyperlink{classRoute}{Route} $\ast$$>$ routes)
+\item 
+void \hyperlink{Route_8cpp_aa819c9e20c722ecb3016c5251a6c9f4a}{print\+Routes\+Table} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{Route_8cpp_aa819c9e20c722ecb3016c5251a6c9f4a}{}\label{Route_8cpp_aa819c9e20c722ecb3016c5251a6c9f4a} 
+\index{Route.\+cpp@{Route.\+cpp}!print\+Routes\+Table@{print\+Routes\+Table}}
+\index{print\+Routes\+Table@{print\+Routes\+Table}!Route.\+cpp@{Route.\+cpp}}
+\subsubsection{\texorpdfstring{print\+Routes\+Table()}{printRoutesTable()}}
+{\footnotesize\ttfamily void print\+Routes\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print the routes table \hypertarget{Route_8cpp_a4ae99f58758475c2231df8e4c2913a6f}{}\label{Route_8cpp_a4ae99f58758475c2231df8e4c2913a6f} 
+\index{Route.\+cpp@{Route.\+cpp}!read\+Distance@{read\+Distance}}
+\index{read\+Distance@{read\+Distance}!Route.\+cpp@{Route.\+cpp}}
+\subsubsection{\texorpdfstring{read\+Distance()}{readDistance()}}
+{\footnotesize\ttfamily double read\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+General functions for routes Ask the user for the route distance and checks if its\textquotesingle{}s a number. \begin{DoxyReturn}{Returns}
+route distance 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Distance\+Expection} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{Route_8cpp_a7103bb70ea26b0bbe5b4e3ae687f9b25}{}\label{Route_8cpp_a7103bb70ea26b0bbe5b4e3ae687f9b25} 
+\index{Route.\+cpp@{Route.\+cpp}!read\+Expected\+Time@{read\+Expected\+Time}}
+\index{read\+Expected\+Time@{read\+Expected\+Time}!Route.\+cpp@{Route.\+cpp}}
+\subsubsection{\texorpdfstring{read\+Expected\+Time()}{readExpectedTime()}}
+{\footnotesize\ttfamily int read\+Expected\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ask the user for the route expected time and checks if its\textquotesingle{}s a number. \begin{DoxyReturn}{Returns}
+expected time 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classInvalidExpectedTimeException}{Invalid\+Expected\+Time\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{Route_8cpp_a877a81d8143074fd7ec553cbca8951a7}{}\label{Route_8cpp_a877a81d8143074fd7ec553cbca8951a7} 
+\index{Route.\+cpp@{Route.\+cpp}!show\+Available\+Routes@{show\+Available\+Routes}}
+\index{show\+Available\+Routes@{show\+Available\+Routes}!Route.\+cpp@{Route.\+cpp}}
+\subsubsection{\texorpdfstring{show\+Available\+Routes()}{showAvailableRoutes()}}
+{\footnotesize\ttfamily void show\+Available\+Routes (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classRoute}{Route} $\ast$$>$}]{routes }\end{DoxyParamCaption})}
+
+Show all the routes information in line with the routes table. 
+\begin{DoxyParams}{Parameters}
+{\em routes} & available routes \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,128 @@
+\hypertarget{classVoucher}{}\section{Voucher Class Reference}
+\label{classVoucher}\index{Voucher@{Voucher}}
+
+
+{\ttfamily \#include $<$Voucher.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVoucher_aec53b33fa78469b74a2a098d709d2628}{Voucher} (\hyperlink{classDate}{Date} \hyperlink{classVoucher_a68434d1be856aa11041f21bf9036b733}{duration}, double \hyperlink{classVoucher_a1a0c90ed8a1aac5c6a92cb1912a16572}{value})
+\item 
+void \hyperlink{classVoucher_a75ecfe9594cdbc6bcf6c38326672d040}{set\+Value} (double)
+\item 
+void \hyperlink{classVoucher_a1db87fd0a6b0ec16825c52a6f24fa4b1}{set\+Date} (\hyperlink{classDate}{Date})
+\item 
+\hyperlink{classDate}{Date} \hyperlink{classVoucher_a661d91c985c89f3cb9231db52c45a8f1}{get\+Duration} ()
+\item 
+double \hyperlink{classVoucher_a1fa7c64bf3bada3b425a05fd43311519}{get\+Value} ()
+\item 
+string \hyperlink{classVoucher_a3fbbf6a661b7542fa1012bb287d564d8}{get\+Information} ()
+\item 
+string \hyperlink{classVoucher_abac34093e355c27735b6e7bc04bae7bb}{to\+File\+Format} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDate}{Date} \hyperlink{classVoucher_a68434d1be856aa11041f21bf9036b733}{duration}
+\item 
+double \hyperlink{classVoucher_a1a0c90ed8a1aac5c6a92cb1912a16572}{value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classVoucher_aec53b33fa78469b74a2a098d709d2628}{}\label{classVoucher_aec53b33fa78469b74a2a098d709d2628} 
+\index{Voucher@{Voucher}!Voucher@{Voucher}}
+\index{Voucher@{Voucher}!Voucher@{Voucher}}
+\subsubsection{\texorpdfstring{Voucher()}{Voucher()}}
+{\footnotesize\ttfamily Voucher\+::\+Voucher (\begin{DoxyParamCaption}\item[{\hyperlink{classDate}{Date}}]{duration,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+The constructor of the \hyperlink{classVoucher}{Voucher} class, where the elements are initialized. 
+\begin{DoxyParams}{Parameters}
+{\em value} & voucher deadline \\
+\hline
+{\em value} & voucher value \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classVoucher_a661d91c985c89f3cb9231db52c45a8f1}{}\label{classVoucher_a661d91c985c89f3cb9231db52c45a8f1} 
+\index{Voucher@{Voucher}!get\+Duration@{get\+Duration}}
+\index{get\+Duration@{get\+Duration}!Voucher@{Voucher}}
+\subsubsection{\texorpdfstring{get\+Duration()}{getDuration()}}
+{\footnotesize\ttfamily \hyperlink{classDate}{Date} Voucher\+::get\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Duration is a private date of the \hyperlink{classVoucher}{Voucher} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+voucher deadline 
+\end{DoxyReturn}
+\hypertarget{classVoucher_a3fbbf6a661b7542fa1012bb287d564d8}{}\label{classVoucher_a3fbbf6a661b7542fa1012bb287d564d8} 
+\index{Voucher@{Voucher}!get\+Information@{get\+Information}}
+\index{get\+Information@{get\+Information}!Voucher@{Voucher}}
+\subsubsection{\texorpdfstring{get\+Information()}{getInformation()}}
+{\footnotesize\ttfamily string Voucher\+::get\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get a voucher information. \begin{DoxyReturn}{Returns}
+a string with the voucher information 
+\end{DoxyReturn}
+\hypertarget{classVoucher_a1fa7c64bf3bada3b425a05fd43311519}{}\label{classVoucher_a1fa7c64bf3bada3b425a05fd43311519} 
+\index{Voucher@{Voucher}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Voucher@{Voucher}}
+\subsubsection{\texorpdfstring{get\+Value()}{getValue()}}
+{\footnotesize\ttfamily double Voucher\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Value is a private double of the \hyperlink{classVoucher}{Voucher} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+voucher value 
+\end{DoxyReturn}
+\hypertarget{classVoucher_a1db87fd0a6b0ec16825c52a6f24fa4b1}{}\label{classVoucher_a1db87fd0a6b0ec16825c52a6f24fa4b1} 
+\index{Voucher@{Voucher}!set\+Date@{set\+Date}}
+\index{set\+Date@{set\+Date}!Voucher@{Voucher}}
+\subsubsection{\texorpdfstring{set\+Date()}{setDate()}}
+{\footnotesize\ttfamily void Voucher\+::set\+Date (\begin{DoxyParamCaption}\item[{\hyperlink{classDate}{Date}}]{date }\end{DoxyParamCaption})}
+
+Set the deadline voucher 
+\begin{DoxyParams}{Parameters}
+{\em date} & voucher date \\
+\hline
+\end{DoxyParams}
+\hypertarget{classVoucher_a75ecfe9594cdbc6bcf6c38326672d040}{}\label{classVoucher_a75ecfe9594cdbc6bcf6c38326672d040} 
+\index{Voucher@{Voucher}!set\+Value@{set\+Value}}
+\index{set\+Value@{set\+Value}!Voucher@{Voucher}}
+\subsubsection{\texorpdfstring{set\+Value()}{setValue()}}
+{\footnotesize\ttfamily void Voucher\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+Set a voucher value. 
+\begin{DoxyParams}{Parameters}
+{\em voucher} & value \\
+\hline
+\end{DoxyParams}
+\hypertarget{classVoucher_abac34093e355c27735b6e7bc04bae7bb}{}\label{classVoucher_abac34093e355c27735b6e7bc04bae7bb} 
+\index{Voucher@{Voucher}!to\+File\+Format@{to\+File\+Format}}
+\index{to\+File\+Format@{to\+File\+Format}!Voucher@{Voucher}}
+\subsubsection{\texorpdfstring{to\+File\+Format()}{toFileFormat()}}
+{\footnotesize\ttfamily string Voucher\+::to\+File\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string with all information of the voucher in the format needed. \begin{DoxyReturn}{Returns}
+a string with the voucher information in the format needed 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classVoucher_a68434d1be856aa11041f21bf9036b733}{}\label{classVoucher_a68434d1be856aa11041f21bf9036b733} 
+\index{Voucher@{Voucher}!duration@{duration}}
+\index{duration@{duration}!Voucher@{Voucher}}
+\subsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily \hyperlink{classDate}{Date} Voucher\+::duration\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classVoucher_a1a0c90ed8a1aac5c6a92cb1912a16572}{}\label{classVoucher_a1a0c90ed8a1aac5c6a92cb1912a16572} 
+\index{Voucher@{Voucher}!value@{value}}
+\index{value@{value}!Voucher@{Voucher}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily double Voucher\+::value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Voucher_8h}{Voucher.\+h}\item 
+src/\hyperlink{Voucher_8cpp}{Voucher.\+cpp}\end{DoxyCompactItemize}

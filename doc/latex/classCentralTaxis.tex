@@ -1,0 +1,536 @@
+\hypertarget{classCentralTaxis}{}\section{Central\+Taxis Class Reference}
+\label{classCentralTaxis}\index{Central\+Taxis@{Central\+Taxis}}
+
+
+{\ttfamily \#include $<$Central\+Taxis.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCentralTaxis_aca0cca3a2df44dadf8bfcb71b3636739}{Central\+Taxis} (string \hyperlink{classCentralTaxis_ab651d92a544bb7910586183aef0b5ff6}{name}, string \hyperlink{classCentralTaxis_a6b4866b7ea58f6672dfab0677cc7a3ed}{vouchers\+File}, string \hyperlink{classCentralTaxis_a658c8ac7923a5f759da1545a21416532}{customers\+File}, string \hyperlink{classCentralTaxis_a0c57e6ffde520f8145edd96eb0e1fe22}{services\+File}, string \hyperlink{classCentralTaxis_af411ccf9a02306f4fb6343607ad9b751}{routes\+File})
+\item 
+\hyperlink{classCentralTaxis_a3a39063e06963a5465f0fcb9ed34ac14}{$\sim$\+Central\+Taxis} ()
+\item 
+void \hyperlink{classCentralTaxis_a487d12631006ffef10f96d8dd74a1bf5}{load\+Vouchers} (map$<$ int, \hyperlink{classVoucher}{Voucher} $\ast$$>$ \&)
+\item 
+vector$<$ \hyperlink{classCustomer}{Customer} $\ast$ $>$ \hyperlink{classCentralTaxis_a906b443fab8b19ebadb141c83bb769c7}{get\+Customers} () const
+\item 
+vector$<$ \hyperlink{classService}{Service} $\ast$ $>$ \hyperlink{classCentralTaxis_af1d3832f3a1c96b78d04b4970cd8f777}{get\+Services} () const
+\item 
+vector$<$ \hyperlink{classRoute}{Route} $\ast$ $>$ \hyperlink{classCentralTaxis_a16d7310cd6a72a69855756902aec68ec}{get\+Routes} () const
+\item 
+string \hyperlink{classCentralTaxis_a64985fb9b31e49a68b9f70450ce59c88}{get\+Customers\+File\+Name} () const
+\item 
+string \hyperlink{classCentralTaxis_a28391cdefa6db5676197fbea2c031160}{get\+Services\+File\+Name} () const
+\item 
+void \hyperlink{classCentralTaxis_a085236a6f7fed6b8bb9fa76321c66bb3}{edit\+Customer\+Name} ()
+\item 
+void \hyperlink{classCentralTaxis_a7cc08b8ba57d9fff5b9adb50745e3718}{edit\+Customer\+Address} ()
+\item 
+void \hyperlink{classCentralTaxis_a5e432b9d6c0379ec72c44c68f2c7985e}{edit\+Customer\+Phone\+Number} ()
+\item 
+void \hyperlink{classCentralTaxis_af3f66bbaf6634e194516cad57e81dc29}{remove\+Customer} ()
+\item 
+\hyperlink{classCustomer}{Customer} $\ast$ \hyperlink{classCentralTaxis_aa7d75e8104ae0545d2492a901d0dad01}{insert\+New\+Customer} ()
+\item 
+void \hyperlink{classCentralTaxis_a25e5982f718aed970a3e45a52ed5f679}{save\+Customers} ()
+\item 
+void \hyperlink{classCentralTaxis_a41834471902f8edecd3bca59aded0a17}{remove\+Route} ()
+\item 
+void \hyperlink{classCentralTaxis_a6b5ef764a0ea1e6d7db69a132f7f7b93}{insert\+New\+Route} ()
+\item 
+\hyperlink{classRoute}{Route} $\ast$ \hyperlink{classCentralTaxis_ac082bb8603c1118dbf262e917d2d1f72}{insert\+New\+Route} (string, string)
+\item 
+void \hyperlink{classCentralTaxis_a82f1612dc9c403c5fdb9997230b6d256}{save\+Routes} ()
+\item 
+void \hyperlink{classCentralTaxis_a92ab1cf8aae3e4344d10a6ec35b602ba}{insert\+New\+Service} ()
+\item 
+\hyperlink{classCustomer}{Customer} $\ast$ \hyperlink{classCentralTaxis_ab73c78ec721497c927b5a9201f83372d}{process\+Customer\+New\+Service} ()
+\item 
+\hyperlink{classRoute}{Route} $\ast$ \hyperlink{classCentralTaxis_ade8b270f8899bda1b78011a56cc2ee52}{find\+Route} (string, string)
+\item 
+\hyperlink{classRoute}{Route} $\ast$ \hyperlink{classCentralTaxis_a36a8bbc9bb6b7d94d7a635d7244305c4}{process\+Route\+New\+Service} ()
+\item 
+int \hyperlink{classCentralTaxis_aae75d9fc9baad1a95b00abeeed8fcb96}{process\+Time\+Service} ()
+\item 
+string \hyperlink{classCentralTaxis_a5acf24269ed6bed72b034c13bfb2395d}{process\+Type\+Of\+Payment} (\hyperlink{classCustomer}{Customer} $\ast$)
+\item 
+void \hyperlink{classCentralTaxis_ad262d0a0dabe84a7a8f4f0469e3fa837}{process\+Extra\+Rate\+Service} (double \&, string)
+\item 
+bool \hyperlink{classCentralTaxis_a29fcc5ee66cd32edfd78ef0eac650df9}{use\+Discount} (\hyperlink{classCustomer}{Customer} $\ast$, float)
+\item 
+bool \hyperlink{classCentralTaxis_aaa6a5d0823c6fdfe9897ce5d9c2c62d7}{offer\+Voucher} (\hyperlink{classCompanyCustomer}{Company\+Customer} $\ast$)
+\item 
+void \hyperlink{classCentralTaxis_a9edea0d7bf78ea4dfbba91c89d4d75f2}{save\+Services} ()
+\item 
+void \hyperlink{classCentralTaxis_a9376fbd8fe4cb00eadb8362318d722e0}{save\+Vouchers} ()
+\item 
+bool \hyperlink{classCentralTaxis_a5eec3e0f79f237dffd86ce7971ea8697}{read\+File} (const string \&, vector$<$ string $>$ \&)
+\item 
+bool \hyperlink{classCentralTaxis_abc9cdf5bffe9022c1a06579d029f9ffb}{read\+Vouchers\+File} (map$<$ int, \hyperlink{classVoucher}{Voucher} $\ast$$>$ \&)
+\item 
+bool \hyperlink{classCentralTaxis_abf02cd0c1df2362782871eef2bf4286a}{read\+Customers\+File} (const map$<$ int, \hyperlink{classVoucher}{Voucher} $\ast$$>$ \&)
+\item 
+bool \hyperlink{classCentralTaxis_a5e41ce28aea248f923e5a4be43897d93}{read\+Services\+File} ()
+\item 
+bool \hyperlink{classCentralTaxis_a19d4f7d194ff8745f788ec748c35c017}{read\+Routes\+File} ()
+\item 
+void \hyperlink{classCentralTaxis_aa1888de63e2e31347ff1279b0e95f764}{print\+Voucher\+Table} ()
+\item 
+void \hyperlink{classCentralTaxis_a129e85f40c8b2c618b5ea3b72551dd2c}{show\+Discounts} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classCentralTaxis_ab651d92a544bb7910586183aef0b5ff6}{name}
+\item 
+string \hyperlink{classCentralTaxis_a658c8ac7923a5f759da1545a21416532}{customers\+File}
+\item 
+string \hyperlink{classCentralTaxis_a0c57e6ffde520f8145edd96eb0e1fe22}{services\+File}
+\item 
+string \hyperlink{classCentralTaxis_af411ccf9a02306f4fb6343607ad9b751}{routes\+File}
+\item 
+string \hyperlink{classCentralTaxis_a6b4866b7ea58f6672dfab0677cc7a3ed}{vouchers\+File}
+\item 
+map$<$ int, \hyperlink{classVoucher}{Voucher} $\ast$ $>$ \hyperlink{classCentralTaxis_a3213a25703a7791fda679f93de0ff652}{map\+Vouchers}
+\item 
+vector$<$ \hyperlink{classCustomer}{Customer} $\ast$ $>$ \hyperlink{classCentralTaxis_a5418c7eb3c09a2037e4802630c53f5ee}{customers}
+\item 
+vector$<$ \hyperlink{classService}{Service} $\ast$ $>$ \hyperlink{classCentralTaxis_af5c916262a876770f184a31fff7203e5}{services}
+\item 
+vector$<$ \hyperlink{classRoute}{Route} $\ast$ $>$ \hyperlink{classCentralTaxis_aefebf92c6b447639524856f919b8736f}{routes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCentralTaxis_aca0cca3a2df44dadf8bfcb71b3636739}{}\label{classCentralTaxis_aca0cca3a2df44dadf8bfcb71b3636739} 
+\index{Central\+Taxis@{Central\+Taxis}!Central\+Taxis@{Central\+Taxis}}
+\index{Central\+Taxis@{Central\+Taxis}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{Central\+Taxis()}{CentralTaxis()}}
+{\footnotesize\ttfamily Central\+Taxis\+::\+Central\+Taxis (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{vouchers\+File,  }\item[{string}]{customers\+File,  }\item[{string}]{services\+File,  }\item[{string}]{routes\+File }\end{DoxyParamCaption})}
+
+The constructor of the main class, where the elements are initialized. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of central taxi \\
+\hline
+{\em vouchers\+File} & file with customer vouchers \\
+\hline
+{\em customer\+File} & file with the information of the clients \\
+\hline
+{\em services\+File} & file with the information of the services \\
+\hline
+{\em routes\+File} & file with the information of the available routes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCentralTaxis_a3a39063e06963a5465f0fcb9ed34ac14}{}\label{classCentralTaxis_a3a39063e06963a5465f0fcb9ed34ac14} 
+\index{Central\+Taxis@{Central\+Taxis}!````~Central\+Taxis@{$\sim$\+Central\+Taxis}}
+\index{````~Central\+Taxis@{$\sim$\+Central\+Taxis}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{$\sim$\+Central\+Taxis()}{~CentralTaxis()}}
+{\footnotesize\ttfamily Central\+Taxis\+::$\sim$\+Central\+Taxis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCentralTaxis_a7cc08b8ba57d9fff5b9adb50745e3718}{}\label{classCentralTaxis_a7cc08b8ba57d9fff5b9adb50745e3718} 
+\index{Central\+Taxis@{Central\+Taxis}!edit\+Customer\+Address@{edit\+Customer\+Address}}
+\index{edit\+Customer\+Address@{edit\+Customer\+Address}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{edit\+Customer\+Address()}{editCustomerAddress()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::edit\+Customer\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function edits a customer address. The customer is searched by the N\+IF. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classInvalidNifException}{Invalid\+Nif\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classCentralTaxis_a085236a6f7fed6b8bb9fa76321c66bb3}{}\label{classCentralTaxis_a085236a6f7fed6b8bb9fa76321c66bb3} 
+\index{Central\+Taxis@{Central\+Taxis}!edit\+Customer\+Name@{edit\+Customer\+Name}}
+\index{edit\+Customer\+Name@{edit\+Customer\+Name}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{edit\+Customer\+Name()}{editCustomerName()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::edit\+Customer\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function edits a customer name. The customer is searched by the N\+IF. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classInvalidNifException}{Invalid\+Nif\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classCentralTaxis_a5e432b9d6c0379ec72c44c68f2c7985e}{}\label{classCentralTaxis_a5e432b9d6c0379ec72c44c68f2c7985e} 
+\index{Central\+Taxis@{Central\+Taxis}!edit\+Customer\+Phone\+Number@{edit\+Customer\+Phone\+Number}}
+\index{edit\+Customer\+Phone\+Number@{edit\+Customer\+Phone\+Number}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{edit\+Customer\+Phone\+Number()}{editCustomerPhoneNumber()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::edit\+Customer\+Phone\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function edits a customer phone number. The customer is searched by the N\+IF. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classInvalidNifException}{Invalid\+Nif\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classCentralTaxis_ade8b270f8899bda1b78011a56cc2ee52}{}\label{classCentralTaxis_ade8b270f8899bda1b78011a56cc2ee52} 
+\index{Central\+Taxis@{Central\+Taxis}!find\+Route@{find\+Route}}
+\index{find\+Route@{find\+Route}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{find\+Route()}{findRoute()}}
+{\footnotesize\ttfamily \hyperlink{classRoute}{Route} $\ast$ Central\+Taxis\+::find\+Route (\begin{DoxyParamCaption}\item[{string}]{source,  }\item[{string}]{arrival }\end{DoxyParamCaption})}
+
+This function searches for a route. 
+\begin{DoxyParams}{Parameters}
+{\em source} & route \\
+\hline
+{\em arrival} & route \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classRoute}{Route} or N\+U\+LL if it doesn\textquotesingle{}t exist 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_a906b443fab8b19ebadb141c83bb769c7}{}\label{classCentralTaxis_a906b443fab8b19ebadb141c83bb769c7} 
+\index{Central\+Taxis@{Central\+Taxis}!get\+Customers@{get\+Customers}}
+\index{get\+Customers@{get\+Customers}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{get\+Customers()}{getCustomers()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{classCustomer}{Customer} $\ast$ $>$ Central\+Taxis\+::get\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Customers is a private vector of the \hyperlink{classCentralTaxis}{Central\+Taxis} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+customers vector 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_a64985fb9b31e49a68b9f70450ce59c88}{}\label{classCentralTaxis_a64985fb9b31e49a68b9f70450ce59c88} 
+\index{Central\+Taxis@{Central\+Taxis}!get\+Customers\+File\+Name@{get\+Customers\+File\+Name}}
+\index{get\+Customers\+File\+Name@{get\+Customers\+File\+Name}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{get\+Customers\+File\+Name()}{getCustomersFileName()}}
+{\footnotesize\ttfamily string Central\+Taxis\+::get\+Customers\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Customers\+File is a private string of the \hyperlink{classCentralTaxis}{Central\+Taxis} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+customers file 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_a16d7310cd6a72a69855756902aec68ec}{}\label{classCentralTaxis_a16d7310cd6a72a69855756902aec68ec} 
+\index{Central\+Taxis@{Central\+Taxis}!get\+Routes@{get\+Routes}}
+\index{get\+Routes@{get\+Routes}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{get\+Routes()}{getRoutes()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{classRoute}{Route} $\ast$ $>$ Central\+Taxis\+::get\+Routes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Routes is a private vector of the \hyperlink{classCentralTaxis}{Central\+Taxis} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+routes vector 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_af1d3832f3a1c96b78d04b4970cd8f777}{}\label{classCentralTaxis_af1d3832f3a1c96b78d04b4970cd8f777} 
+\index{Central\+Taxis@{Central\+Taxis}!get\+Services@{get\+Services}}
+\index{get\+Services@{get\+Services}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{get\+Services()}{getServices()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{classService}{Service} $\ast$ $>$ Central\+Taxis\+::get\+Services (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Services is a private vector of the \hyperlink{classCentralTaxis}{Central\+Taxis} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+services vector 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_a28391cdefa6db5676197fbea2c031160}{}\label{classCentralTaxis_a28391cdefa6db5676197fbea2c031160} 
+\index{Central\+Taxis@{Central\+Taxis}!get\+Services\+File\+Name@{get\+Services\+File\+Name}}
+\index{get\+Services\+File\+Name@{get\+Services\+File\+Name}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{get\+Services\+File\+Name()}{getServicesFileName()}}
+{\footnotesize\ttfamily string Central\+Taxis\+::get\+Services\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+services\+File is a private string of the \hyperlink{classCentralTaxis}{Central\+Taxis} class, we use \char`\"{}get\char`\"{} to be able to access this element in other classes. \begin{DoxyReturn}{Returns}
+services vector 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_aa7d75e8104ae0545d2492a901d0dad01}{}\label{classCentralTaxis_aa7d75e8104ae0545d2492a901d0dad01} 
+\index{Central\+Taxis@{Central\+Taxis}!insert\+New\+Customer@{insert\+New\+Customer}}
+\index{insert\+New\+Customer@{insert\+New\+Customer}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{insert\+New\+Customer()}{insertNewCustomer()}}
+{\footnotesize\ttfamily \hyperlink{classCustomer}{Customer} $\ast$ Central\+Taxis\+::insert\+New\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function inserts a new customer, ordered , in the vector. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classInvalidNifException}{Invalid\+Nif\+Exception}} & \\
+\hline
+{\em \hyperlink{classInvalidPhoneNumberException}{Invalid\+Phone\+Number\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classCentralTaxis_a6b5ef764a0ea1e6d7db69a132f7f7b93}{}\label{classCentralTaxis_a6b5ef764a0ea1e6d7db69a132f7f7b93} 
+\index{Central\+Taxis@{Central\+Taxis}!insert\+New\+Route@{insert\+New\+Route}}
+\index{insert\+New\+Route@{insert\+New\+Route}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{insert\+New\+Route()}{insertNewRoute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Central\+Taxis\+::insert\+New\+Route (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function inserts a new route. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classInvalidDistanceException}{Invalid\+Distance\+Exception}} & \\
+\hline
+{\em \hyperlink{classInvalidExpectedTimeException}{Invalid\+Expected\+Time\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classCentralTaxis_ac082bb8603c1118dbf262e917d2d1f72}{}\label{classCentralTaxis_ac082bb8603c1118dbf262e917d2d1f72} 
+\index{Central\+Taxis@{Central\+Taxis}!insert\+New\+Route@{insert\+New\+Route}}
+\index{insert\+New\+Route@{insert\+New\+Route}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{insert\+New\+Route()}{insertNewRoute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classRoute}{Route} $\ast$ Central\+Taxis\+::insert\+New\+Route (\begin{DoxyParamCaption}\item[{string}]{source,  }\item[{string}]{arrival }\end{DoxyParamCaption})}
+
+This function inserts a new route. Receive a source and an arrival, and ask the user the distance and expected time. 
+\begin{DoxyParams}{Parameters}
+{\em source} & route source \\
+\hline
+{\em arrival} & route arrival \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classInvalidDistanceException}{Invalid\+Distance\+Exception}} & \\
+\hline
+{\em \hyperlink{classInvalidExpectedTimeException}{Invalid\+Expected\+Time\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classCentralTaxis_a92ab1cf8aae3e4344d10a6ec35b602ba}{}\label{classCentralTaxis_a92ab1cf8aae3e4344d10a6ec35b602ba} 
+\index{Central\+Taxis@{Central\+Taxis}!insert\+New\+Service@{insert\+New\+Service}}
+\index{insert\+New\+Service@{insert\+New\+Service}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{insert\+New\+Service()}{insertNewService()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::insert\+New\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function inserts a new service. The service value is calculated. If the customer has available discounts, the service can use them if the customer wants. \hypertarget{classCentralTaxis_a487d12631006ffef10f96d8dd74a1bf5}{}\label{classCentralTaxis_a487d12631006ffef10f96d8dd74a1bf5} 
+\index{Central\+Taxis@{Central\+Taxis}!load\+Vouchers@{load\+Vouchers}}
+\index{load\+Vouchers@{load\+Vouchers}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{load\+Vouchers()}{loadVouchers()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::load\+Vouchers (\begin{DoxyParamCaption}\item[{map$<$ int, \hyperlink{classVoucher}{Voucher} $\ast$$>$ \&}]{map\+Vouchers }\end{DoxyParamCaption})}
+
+Load vouchers from vouchers file in to map\+Vouchers 
+\begin{DoxyParams}{Parameters}
+{\em map\+Vouchers} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCentralTaxis_aaa6a5d0823c6fdfe9897ce5d9c2c62d7}{}\label{classCentralTaxis_aaa6a5d0823c6fdfe9897ce5d9c2c62d7} 
+\index{Central\+Taxis@{Central\+Taxis}!offer\+Voucher@{offer\+Voucher}}
+\index{offer\+Voucher@{offer\+Voucher}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{offer\+Voucher()}{offerVoucher()}}
+{\footnotesize\ttfamily bool Central\+Taxis\+::offer\+Voucher (\begin{DoxyParamCaption}\item[{\hyperlink{classCompanyCustomer}{Company\+Customer} $\ast$}]{customer }\end{DoxyParamCaption})}
+
+This function makes the company customers vouchers. Adds a new voucher to customer object 
+\begin{DoxyParams}{Parameters}
+{\em customer} & company customer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if it was generate a new voucher 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_aa1888de63e2e31347ff1279b0e95f764}{}\label{classCentralTaxis_aa1888de63e2e31347ff1279b0e95f764} 
+\index{Central\+Taxis@{Central\+Taxis}!print\+Voucher\+Table@{print\+Voucher\+Table}}
+\index{print\+Voucher\+Table@{print\+Voucher\+Table}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{print\+Voucher\+Table()}{printVoucherTable()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::print\+Voucher\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print the voucher table. \hypertarget{classCentralTaxis_ab73c78ec721497c927b5a9201f83372d}{}\label{classCentralTaxis_ab73c78ec721497c927b5a9201f83372d} 
+\index{Central\+Taxis@{Central\+Taxis}!process\+Customer\+New\+Service@{process\+Customer\+New\+Service}}
+\index{process\+Customer\+New\+Service@{process\+Customer\+New\+Service}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{process\+Customer\+New\+Service()}{processCustomerNewService()}}
+{\footnotesize\ttfamily \hyperlink{classCustomer}{Customer} $\ast$ Central\+Taxis\+::process\+Customer\+New\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function processes a customer from a new service. There are two options\+: -\/\+If the customer is registered, the function search for the customer N\+IF and if it isn\textquotesingle{}t valid throw an exception(\+Invalid\+Nif\+Exception). If the customer doesn\textquotesingle{}t exist shows a message\+: \char`\"{}\+Nif not found, please try again.\char`\"{}. -\/\+For a casual customer the user can register him or proceed without registering". 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classInvalidNifException}{Invalid\+Nif\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCustomer}{Customer} that used the service 
+
+N\+U\+LL in case the customer is not registered 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_ad262d0a0dabe84a7a8f4f0469e3fa837}{}\label{classCentralTaxis_ad262d0a0dabe84a7a8f4f0469e3fa837} 
+\index{Central\+Taxis@{Central\+Taxis}!process\+Extra\+Rate\+Service@{process\+Extra\+Rate\+Service}}
+\index{process\+Extra\+Rate\+Service@{process\+Extra\+Rate\+Service}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{process\+Extra\+Rate\+Service()}{processExtraRateService()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::process\+Extra\+Rate\+Service (\begin{DoxyParamCaption}\item[{double \&}]{cost,  }\item[{string}]{payment }\end{DoxyParamCaption})}
+
+This function processes the extra cost if the payment type is Credit or End\+Of\+Month 
+\begin{DoxyParams}{Parameters}
+{\em cost} & service cost \\
+\hline
+{\em payment} & payment type \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCentralTaxis_a36a8bbc9bb6b7d94d7a635d7244305c4}{}\label{classCentralTaxis_a36a8bbc9bb6b7d94d7a635d7244305c4} 
+\index{Central\+Taxis@{Central\+Taxis}!process\+Route\+New\+Service@{process\+Route\+New\+Service}}
+\index{process\+Route\+New\+Service@{process\+Route\+New\+Service}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{process\+Route\+New\+Service()}{processRouteNewService()}}
+{\footnotesize\ttfamily \hyperlink{classRoute}{Route} $\ast$ Central\+Taxis\+::process\+Route\+New\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function verifies if the route already exists. If not, the user can insert a new route. \begin{DoxyReturn}{Returns}
+\hyperlink{classRoute}{Route} added 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_aae75d9fc9baad1a95b00abeeed8fcb96}{}\label{classCentralTaxis_aae75d9fc9baad1a95b00abeeed8fcb96} 
+\index{Central\+Taxis@{Central\+Taxis}!process\+Time\+Service@{process\+Time\+Service}}
+\index{process\+Time\+Service@{process\+Time\+Service}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{process\+Time\+Service()}{processTimeService()}}
+{\footnotesize\ttfamily int Central\+Taxis\+::process\+Time\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function asks the user for the service time and verify if it\textquotesingle{}s valid. \begin{DoxyReturn}{Returns}
+time of the service 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_a5acf24269ed6bed72b034c13bfb2395d}{}\label{classCentralTaxis_a5acf24269ed6bed72b034c13bfb2395d} 
+\index{Central\+Taxis@{Central\+Taxis}!process\+Type\+Of\+Payment@{process\+Type\+Of\+Payment}}
+\index{process\+Type\+Of\+Payment@{process\+Type\+Of\+Payment}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{process\+Type\+Of\+Payment()}{processTypeOfPayment()}}
+{\footnotesize\ttfamily string Central\+Taxis\+::process\+Type\+Of\+Payment (\begin{DoxyParamCaption}\item[{\hyperlink{classCustomer}{Customer} $\ast$}]{customer }\end{DoxyParamCaption})}
+
+This function processes the type of payment. If the customer is private, then the user can only pay with cash or A\+TM. If the customer is private, then the user can only pay with all types of payment(cash,\+A\+T\+M,credit,end of the month). 
+\begin{DoxyParams}{Parameters}
+{\em customer} & \hyperlink{classCentralTaxis}{Central\+Taxis} customer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+payment\+\_\+type 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_abf02cd0c1df2362782871eef2bf4286a}{}\label{classCentralTaxis_abf02cd0c1df2362782871eef2bf4286a} 
+\index{Central\+Taxis@{Central\+Taxis}!read\+Customers\+File@{read\+Customers\+File}}
+\index{read\+Customers\+File@{read\+Customers\+File}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{read\+Customers\+File()}{readCustomersFile()}}
+{\footnotesize\ttfamily bool Central\+Taxis\+::read\+Customers\+File (\begin{DoxyParamCaption}\item[{const map$<$ int, \hyperlink{classVoucher}{Voucher} $\ast$$>$ \&}]{map\+Vouchers }\end{DoxyParamCaption})}
+
+Reads a customers file and save them in a customers vector. \begin{DoxyReturn}{Returns}
+if success. 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_a5eec3e0f79f237dffd86ce7971ea8697}{}\label{classCentralTaxis_a5eec3e0f79f237dffd86ce7971ea8697} 
+\index{Central\+Taxis@{Central\+Taxis}!read\+File@{read\+File}}
+\index{read\+File@{read\+File}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{read\+File()}{readFile()}}
+{\footnotesize\ttfamily bool Central\+Taxis\+::read\+File (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name,  }\item[{vector$<$ string $>$ \&}]{file\+Lines }\end{DoxyParamCaption})}
+
+Functions to read files Reads a given file and separates it to a vector of its lines. Returns true if success. 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & file name \\
+\hline
+{\em file\+Lines} & vector with file lines \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the file can be read 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_a19d4f7d194ff8745f788ec748c35c017}{}\label{classCentralTaxis_a19d4f7d194ff8745f788ec748c35c017} 
+\index{Central\+Taxis@{Central\+Taxis}!read\+Routes\+File@{read\+Routes\+File}}
+\index{read\+Routes\+File@{read\+Routes\+File}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{read\+Routes\+File()}{readRoutesFile()}}
+{\footnotesize\ttfamily bool Central\+Taxis\+::read\+Routes\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classCentralTaxis_a5e41ce28aea248f923e5a4be43897d93}{}\label{classCentralTaxis_a5e41ce28aea248f923e5a4be43897d93} 
+\index{Central\+Taxis@{Central\+Taxis}!read\+Services\+File@{read\+Services\+File}}
+\index{read\+Services\+File@{read\+Services\+File}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{read\+Services\+File()}{readServicesFile()}}
+{\footnotesize\ttfamily bool Central\+Taxis\+::read\+Services\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classCentralTaxis_abc9cdf5bffe9022c1a06579d029f9ffb}{}\label{classCentralTaxis_abc9cdf5bffe9022c1a06579d029f9ffb} 
+\index{Central\+Taxis@{Central\+Taxis}!read\+Vouchers\+File@{read\+Vouchers\+File}}
+\index{read\+Vouchers\+File@{read\+Vouchers\+File}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{read\+Vouchers\+File()}{readVouchersFile()}}
+{\footnotesize\ttfamily bool Central\+Taxis\+::read\+Vouchers\+File (\begin{DoxyParamCaption}\item[{map$<$ int, \hyperlink{classVoucher}{Voucher} $\ast$$>$ \&}]{map\+Vouchers }\end{DoxyParamCaption})}
+
+Reads a vouchers file and save them in a map\+Vouchers. \begin{DoxyReturn}{Returns}
+if success. 
+\end{DoxyReturn}
+\hypertarget{classCentralTaxis_af3f66bbaf6634e194516cad57e81dc29}{}\label{classCentralTaxis_af3f66bbaf6634e194516cad57e81dc29} 
+\index{Central\+Taxis@{Central\+Taxis}!remove\+Customer@{remove\+Customer}}
+\index{remove\+Customer@{remove\+Customer}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{remove\+Customer()}{removeCustomer()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::remove\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function removes a customer. The customer is searched by the N\+IF. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classInvalidNifException}{Invalid\+Nif\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classCentralTaxis_a41834471902f8edecd3bca59aded0a17}{}\label{classCentralTaxis_a41834471902f8edecd3bca59aded0a17} 
+\index{Central\+Taxis@{Central\+Taxis}!remove\+Route@{remove\+Route}}
+\index{remove\+Route@{remove\+Route}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{remove\+Route()}{removeRoute()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::remove\+Route (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function removes a route. If the route exists it shows a message saying that it was successfully removed. Otherwise it will show a message saying that the route wasn\textquotesingle{}t found. \hypertarget{classCentralTaxis_a25e5982f718aed970a3e45a52ed5f679}{}\label{classCentralTaxis_a25e5982f718aed970a3e45a52ed5f679} 
+\index{Central\+Taxis@{Central\+Taxis}!save\+Customers@{save\+Customers}}
+\index{save\+Customers@{save\+Customers}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{save\+Customers()}{saveCustomers()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::save\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Save customers in file after modification \hypertarget{classCentralTaxis_a82f1612dc9c403c5fdb9997230b6d256}{}\label{classCentralTaxis_a82f1612dc9c403c5fdb9997230b6d256} 
+\index{Central\+Taxis@{Central\+Taxis}!save\+Routes@{save\+Routes}}
+\index{save\+Routes@{save\+Routes}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{save\+Routes()}{saveRoutes()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::save\+Routes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Save routes in file after modification. \hypertarget{classCentralTaxis_a9edea0d7bf78ea4dfbba91c89d4d75f2}{}\label{classCentralTaxis_a9edea0d7bf78ea4dfbba91c89d4d75f2} 
+\index{Central\+Taxis@{Central\+Taxis}!save\+Services@{save\+Services}}
+\index{save\+Services@{save\+Services}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{save\+Services()}{saveServices()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::save\+Services (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Save services in file after modification. \hypertarget{classCentralTaxis_a9376fbd8fe4cb00eadb8362318d722e0}{}\label{classCentralTaxis_a9376fbd8fe4cb00eadb8362318d722e0} 
+\index{Central\+Taxis@{Central\+Taxis}!save\+Vouchers@{save\+Vouchers}}
+\index{save\+Vouchers@{save\+Vouchers}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{save\+Vouchers()}{saveVouchers()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::save\+Vouchers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Save vouchers in file after modification. \hypertarget{classCentralTaxis_a129e85f40c8b2c618b5ea3b72551dd2c}{}\label{classCentralTaxis_a129e85f40c8b2c618b5ea3b72551dd2c} 
+\index{Central\+Taxis@{Central\+Taxis}!show\+Discounts@{show\+Discounts}}
+\index{show\+Discounts@{show\+Discounts}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{show\+Discounts()}{showDiscounts()}}
+{\footnotesize\ttfamily void Central\+Taxis\+::show\+Discounts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print the available discounts. \hypertarget{classCentralTaxis_a29fcc5ee66cd32edfd78ef0eac650df9}{}\label{classCentralTaxis_a29fcc5ee66cd32edfd78ef0eac650df9} 
+\index{Central\+Taxis@{Central\+Taxis}!use\+Discount@{use\+Discount}}
+\index{use\+Discount@{use\+Discount}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{use\+Discount()}{useDiscount()}}
+{\footnotesize\ttfamily bool Central\+Taxis\+::use\+Discount (\begin{DoxyParamCaption}\item[{\hyperlink{classCustomer}{Customer} $\ast$}]{customer,  }\item[{float}]{discount }\end{DoxyParamCaption})}
+
+This function shows the customer discount available and asks the user if he wants to use it. If the user answer \char`\"{}yes\char`\"{} the customer points are reseted. \begin{DoxyReturn}{Returns}
+if the discount is to be used 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCentralTaxis_a5418c7eb3c09a2037e4802630c53f5ee}{}\label{classCentralTaxis_a5418c7eb3c09a2037e4802630c53f5ee} 
+\index{Central\+Taxis@{Central\+Taxis}!customers@{customers}}
+\index{customers@{customers}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{customers}{customers}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classCustomer}{Customer}$\ast$$>$ Central\+Taxis\+::customers\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classCentralTaxis_a658c8ac7923a5f759da1545a21416532}{}\label{classCentralTaxis_a658c8ac7923a5f759da1545a21416532} 
+\index{Central\+Taxis@{Central\+Taxis}!customers\+File@{customers\+File}}
+\index{customers\+File@{customers\+File}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{customers\+File}{customersFile}}
+{\footnotesize\ttfamily string Central\+Taxis\+::customers\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classCentralTaxis_a3213a25703a7791fda679f93de0ff652}{}\label{classCentralTaxis_a3213a25703a7791fda679f93de0ff652} 
+\index{Central\+Taxis@{Central\+Taxis}!map\+Vouchers@{map\+Vouchers}}
+\index{map\+Vouchers@{map\+Vouchers}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{map\+Vouchers}{mapVouchers}}
+{\footnotesize\ttfamily map$<$int,\hyperlink{classVoucher}{Voucher}$\ast$$>$ Central\+Taxis\+::map\+Vouchers\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classCentralTaxis_ab651d92a544bb7910586183aef0b5ff6}{}\label{classCentralTaxis_ab651d92a544bb7910586183aef0b5ff6} 
+\index{Central\+Taxis@{Central\+Taxis}!name@{name}}
+\index{name@{name}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Central\+Taxis\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classCentralTaxis_aefebf92c6b447639524856f919b8736f}{}\label{classCentralTaxis_aefebf92c6b447639524856f919b8736f} 
+\index{Central\+Taxis@{Central\+Taxis}!routes@{routes}}
+\index{routes@{routes}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{routes}{routes}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classRoute}{Route}$\ast$$>$ Central\+Taxis\+::routes\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classCentralTaxis_af411ccf9a02306f4fb6343607ad9b751}{}\label{classCentralTaxis_af411ccf9a02306f4fb6343607ad9b751} 
+\index{Central\+Taxis@{Central\+Taxis}!routes\+File@{routes\+File}}
+\index{routes\+File@{routes\+File}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{routes\+File}{routesFile}}
+{\footnotesize\ttfamily string Central\+Taxis\+::routes\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classCentralTaxis_af5c916262a876770f184a31fff7203e5}{}\label{classCentralTaxis_af5c916262a876770f184a31fff7203e5} 
+\index{Central\+Taxis@{Central\+Taxis}!services@{services}}
+\index{services@{services}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{services}{services}}
+{\footnotesize\ttfamily vector$<$\hyperlink{classService}{Service}$\ast$$>$ Central\+Taxis\+::services\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classCentralTaxis_a0c57e6ffde520f8145edd96eb0e1fe22}{}\label{classCentralTaxis_a0c57e6ffde520f8145edd96eb0e1fe22} 
+\index{Central\+Taxis@{Central\+Taxis}!services\+File@{services\+File}}
+\index{services\+File@{services\+File}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{services\+File}{servicesFile}}
+{\footnotesize\ttfamily string Central\+Taxis\+::services\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{classCentralTaxis_a6b4866b7ea58f6672dfab0677cc7a3ed}{}\label{classCentralTaxis_a6b4866b7ea58f6672dfab0677cc7a3ed} 
+\index{Central\+Taxis@{Central\+Taxis}!vouchers\+File@{vouchers\+File}}
+\index{vouchers\+File@{vouchers\+File}!Central\+Taxis@{Central\+Taxis}}
+\subsubsection{\texorpdfstring{vouchers\+File}{vouchersFile}}
+{\footnotesize\ttfamily string Central\+Taxis\+::vouchers\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{CentralTaxis_8h}{Central\+Taxis.\+h}\item 
+src/\hyperlink{CentralTaxis_8cpp}{Central\+Taxis.\+cpp}\end{DoxyCompactItemize}
