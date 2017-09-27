@@ -7,6 +7,4 @@
 - Francisca Leão Cerquinho Ribeiro da Fonseca - up201505791
 - Mariana Lopes Silva - up201506197
 
-This application is based on the management of the services provided by a current taxi company, allowing the manipulation of all the
-functionalities that a taxi station usually has to handle, namely in the administration of clients, services and routes. It was developed
-along the curricular unit Algorithms and Data Structures
+This project consists of reading and writing to text files; customer management (create, change, remove and list customers alphabetically by their name); Transaction management (list all transactions in a date range, list in chronological order the transactions of a customer whose name was given); permission to the user to make purchases (transactions), updating the total amount of purchases of the corresponding customer; calculation of the 10 worst clients and finally, personalization of advertising for a single client and Bottom 10 using the recommendation system.
